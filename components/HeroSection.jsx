@@ -1,4 +1,5 @@
 import { PhoneCall } from "lucide-react";
+import Link from "next/link";
 
 export default function AviationComplianceHero() {
   return (
@@ -23,10 +24,12 @@ export default function AviationComplianceHero() {
               <p className="text-slate-600 font-medium">
                 Struggling with complex compliance requirements in aviation sector? Let us simplify the process for you.
               </p>
+              <Link href="/contactUs">
               <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-all flex items-center justify-center gap-2 mt-4 shadow-md">
                 Contact Us
                 <PhoneCall size={18} />
               </button>
+              </Link>
             </div>
             
             <div className="flex items-center gap-4 pt-4">

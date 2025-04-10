@@ -16,6 +16,7 @@ import {
   GraduationCap,
   PenTool
 } from 'lucide-react';
+import Link from 'next/link';
 
 export default function ServicesComponent() {
   const [activeTab, setActiveTab] = useState(0);
@@ -231,10 +232,12 @@ export default function ServicesComponent() {
               isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
             }`}
           >
+            <Link href="/contactUs">
             <button className="bg-gradient-to-r from-indigo-600 to-indigo-800 hover:from-indigo-700 hover:to-indigo-900 text-white py-4 px-8 rounded-full font-medium shadow-lg hover:shadow-xl transition-all duration-300 flex items-center">
               <Briefcase size={20} className="mr-2" />
               Schedule a Consultation
             </button>
+            </Link>
           </div>
         </div>
       </div>

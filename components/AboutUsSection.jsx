@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { PlaneTakeoff, Shield, Award, Users } from 'lucide-react';
+import Link from 'next/link';
 
 export default function AboutUsSection() {
   const [isVisible, setIsVisible] = useState(false);
@@ -88,9 +89,11 @@ export default function AboutUsSection() {
                     className="rounded-lg shadow-md mb-6 w-full"
                   />
                   <div className="flex justify-center">
+                  <Link href="/contactUs">
                     <button className="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full font-medium transition-all duration-300 transform hover:scale-105 shadow-md">
                       Contact Our Team
                     </button>
+                    </Link>
                   </div>
                 </div>
               </div>
