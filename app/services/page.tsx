@@ -28,30 +28,44 @@ import {
 
 export default function ServicesPage() {
   const [activeSection, setActiveSection] = useState("regulatory");
-  const [visibleSections, setVisibleSections] = useState({});
-  const sectionRefs = {
-    hero: useRef(null),
-    overview: useRef(null),
-    regulatory: useRef(null),
-    governance: useRef(null),
-    advisory: useRef(null),
-    process: useRef(null),
-    testimonials: useRef(null),
-    contact: useRef(null),
-  };
+  const [visibleSections, setVisibleSections] = useState<{ [key: string]: boolean }>({});
 
+  type SectionRefs = {
+    hero: React.RefObject<HTMLDivElement | null>;
+    overview: React.RefObject<HTMLDivElement | null>;
+    regulatory: React.RefObject<HTMLDivElement | null>;
+    governance: React.RefObject<HTMLDivElement | null>;
+    advisory: React.RefObject<HTMLDivElement | null>;
+    process: React.RefObject<HTMLDivElement | null>;
+    testimonials: React.RefObject<HTMLDivElement | null>;
+    contact: React.RefObject<HTMLDivElement | null>;
+  };
+  
+  // Fix: Initialize with useRef<HTMLDivElement>(null) to match the SectionRefs type
+  const sectionRefs: SectionRefs = {
+    hero: useRef<HTMLDivElement>(null),
+    overview: useRef<HTMLDivElement>(null),
+    regulatory: useRef<HTMLDivElement>(null),
+    governance: useRef<HTMLDivElement>(null),
+    advisory: useRef<HTMLDivElement>(null),
+    process: useRef<HTMLDivElement>(null),
+    testimonials: useRef<HTMLDivElement>(null),
+    contact: useRef<HTMLDivElement>(null),
+  };
+  
+
+  
   useEffect(() => {
     const observerOptions = {
       threshold: 0.2,
       rootMargin: "-100px 0px",
     };
 
-    const observerCallback = (entries) => {
+    const observerCallback = (entries: IntersectionObserverEntry[]) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           setVisibleSections((prev) => ({ ...prev, [entry.target.id]: true }));
-
-          // Update active section for nav highlighting
+    
           if (
             entry.target.id !== "hero" &&
             entry.target.id !== "overview" &&
@@ -64,6 +78,7 @@ export default function ServicesPage() {
         }
       });
     };
+    
 
     const observer = new IntersectionObserver(
       observerCallback,
@@ -85,7 +100,15 @@ export default function ServicesPage() {
     };
   }, []);
 
-  const services = [
+  const services: Array<{
+    id: keyof SectionRefs; 
+    title: string;
+    icon: React.ReactNode;
+    description: string;
+    color: string;
+    bgImage: string;
+    items: Array<{ text: string; icon: React.ReactNode }>;
+  }> = [
     {
       id: "regulatory",
       title: "Regulatory Compliance & Civil Aviation Advisory",
@@ -270,14 +293,14 @@ export default function ServicesPage() {
     },
   };
 
-  const scrollToSection = (sectionId) => {
+  const scrollToSection = (sectionId: string) => {
     setActiveSection(sectionId);
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
   };
-
+  
   return (
     <>
       <NavbarComponent />

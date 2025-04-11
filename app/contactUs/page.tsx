@@ -19,22 +19,25 @@ export default function ContactPage() {
     error: false,
   });
 
-  const handleChange = (e) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
       [name]: value,
     }));
   };
-
-  const handleSubmit = (e) => {
+  
+  
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     // Here you would typically send the form data to your backend
     console.log("Form submitted:", formData);
-
+  
     // Simulate successful submission
     setFormStatus({ submitted: true, error: false });
-
+  
     // Reset form
     setFormData({
       name: "",
@@ -43,12 +46,13 @@ export default function ContactPage() {
       subject: "",
       message: "",
     });
-
+  
     // Reset status after 5 seconds
     setTimeout(() => {
       setFormStatus({ submitted: false, error: false });
     }, 5000);
   };
+  
 
   return (
     <>
@@ -256,7 +260,7 @@ export default function ContactPage() {
                     value={formData.message}
                     onChange={handleChange}
                     required
-                    rows="5"
+                    rows={5}
                     className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-sky-500"
                     placeholder="Please provide details about your inquiry..."
                   ></textarea>
@@ -284,7 +288,7 @@ export default function ContactPage() {
             width="100%"
             height="100%"
             style={{ border: 0 }}
-            allowFullScreen=""
+            allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             title="Company Location"
