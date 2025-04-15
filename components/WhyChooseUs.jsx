@@ -29,10 +29,11 @@ export default function WhyChooseUsBanner() {
   }, []);
 
   const reasons = [
-    "30+ years of experience in Government machinery",
-    "Proven expertise in regulatory frameworks & governance",
-    "Affordable, transparent, and client-focused solutions",
-    "End-to-end legal and compliance support under one roof"
+    "Specialized expertise in advisory services",
+    "Dedicated team of professionals committed to your success",
+    "Proven track record of delivering results",
+    "Personalized approach tailored to your specific requirements",
+    "Ongoing support throughout the entire process"
   ];
 
   return (

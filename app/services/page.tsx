@@ -41,7 +41,7 @@ export default function ServicesPage() {
     contact: React.RefObject<HTMLDivElement | null>;
   };
   
-  // Fix: Initialize with useRef<HTMLDivElement>(null) to match the SectionRefs type
+  
   const sectionRefs: SectionRefs = {
     hero: useRef<HTMLDivElement>(null),
     overview: useRef<HTMLDivElement>(null),
@@ -348,14 +348,14 @@ export default function ServicesPage() {
               transition={{ delay: 0.6, duration: 0.8 }}
               className="absolute bottom-0 left-0 w-full"
             >
-              <div className="flex justify-center">
+              {/* <div className="flex justify-center">
                 <div
                   className="bg-white p-4 rounded-t-lg text-indigo-800 cursor-pointer hover:bg-indigo-100 transition-colors duration-300"
                   onClick={() => scrollToSection("overview")}
                 >
                   <ChevronDown size={24} />
                 </div>
-              </div>
+              </div> */}
             </motion.div>
           </div>
         </section>
