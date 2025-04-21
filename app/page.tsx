@@ -35,7 +35,9 @@ export default function Home() {
     <>
     <NavbarComponent  />
     <AviationComplianceHero />
+    <section id="aboutUs">
     <AboutUsSection />
+    </section>
     <ValuesAndVision />
     <ServicesComponent />
     <WhyChooseUs />

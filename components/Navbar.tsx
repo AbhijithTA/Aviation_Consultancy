@@ -9,7 +9,7 @@ export default function NavbarComponent() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white text-gray-800 shadow-sm fixed w-full z-50">
+    <nav className="bg-[#f8f4e4] text-[#FF4A1C] shadow-sm fixed w-full z-50">
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
         <Link href="/" className="flex items-center space-x-3">
           <Image 
@@ -33,7 +33,7 @@ export default function NavbarComponent() {
 
         <ul className="hidden md:flex space-x-8 text-lg font-medium">
           <li><Link href="/" className="text-gray-800 hover:text-blue-600 transition">Home</Link></li>
-          <li><Link href="/about" className="text-gray-800 hover:text-blue-600 transition">About Us</Link></li>
+          <li><Link href="#aboutUs" className="text-gray-800 hover:text-blue-600 transition">About Us</Link></li>
           <li><Link href="/services" className="text-gray-800 hover:text-blue-600 transition">Services</Link></li>
           <li><Link href="/contactUs" className="text-gray-800 hover:text-blue-600 transition">Contact Us</Link></li>
         </ul>
