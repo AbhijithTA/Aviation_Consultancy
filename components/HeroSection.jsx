@@ -19,9 +19,8 @@ export default function AviationComplianceHero() {
               your needs while mitigating legal challenges
             </p>
 
-            <h2 className="text-xl md:text-2xl text-slate-700 font-semibold pt-2">
-              Seamless Access to Government Welfare & Employment Promotion
-              Initiatives and Schemes
+            <h2 className="text-xl md:text-2xl text-slate-700 font-semibold pt-2 capitalize">
+            our Trusted Partner in Compliance & Regulatory Support Across Civil Aviation
             </h2>
 
             <div className="bg-white shadow-lg rounded-lg p-6 border-l-4 border-blue-600 mt-6">

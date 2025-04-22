@@ -34,7 +34,7 @@ import {
                 <div className="p-2 bg-blue-600 rounded-lg mr-3">
                   <PlaneTakeoff size={24} />
                 </div>
-                <h3 className="text-2xl font-bold">Padma</h3>
+                <h3 className="text-2xl font-bold">AVIATE CONSULTANCY SERVICES</h3>
               </div>
               <p className="text-slate-300 mb-6">
                 Your expert partner in regulatory compliance, governance support, and guidance with over three decades of government experience.
@@ -82,7 +82,7 @@ import {
                   'Advisory & Support'
                 ].map((item, index) => (
                   <li key={index}>
-                    <a href="#" className="flex items-center text-slate-300 hover:text-blue-400 transition-colors duration-300">
+                    <a href="/services" className="flex items-center text-slate-300 hover:text-blue-400 transition-colors duration-300">
                       <ChevronRight size={16} className="mr-2" />
                       <span>{item}</span>
                     </a>
@@ -97,11 +97,11 @@ import {
               <ul className="space-y-4">
                 <li className="flex items-start">
                   <MapPin size={18} className="text-blue-400 mr-3 mt-1 flex-shrink-0" />
-                  <span className="text-slate-300">123 Aviation Plaza, New Delhi, 110001, India</span>
+                  <span className="text-slate-300"> Aviate Consultancy Services, 495/E, Kozhuvelil Building, Ernakulam, Kerala</span>
                 </li>
                 <li className="flex items-center">
                   <Phone size={18} className="text-blue-400 mr-3 flex-shrink-0" />
-                  <span className="text-slate-300">+91 98765 43210</span>
+                  <span className="text-slate-300">+91 9968955004</span>
                 </li>
                 <li className="flex items-center">
                   <Mail size={18} className="text-blue-400 mr-3 flex-shrink-0" />
@@ -122,7 +122,7 @@ import {
         <div className="bg-slate-950 py-4">
           <div className="container mx-auto px-6 max-w-6xl flex flex-col md:flex-row justify-between items-center">
             <p className="text-slate-400 text-sm text-center md:text-left mb-4 md:mb-0">
-              © {currentYear} Padma Consultancy Services. All rights reserved.
+              © {currentYear} Aviate Consultancy Services. All rights reserved.
             </p>
             <div className="flex space-x-6">
               <a href="#" className="text-slate-400 hover:text-white text-sm transition-colors duration-300">
