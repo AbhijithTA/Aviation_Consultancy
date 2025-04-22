@@ -83,7 +83,7 @@ export default function ValuesAndVision() {
               </h2>
               <div className="w-24 h-1 bg-blue-600 mb-6"></div>
               <p className="text-gray-600 max-w-lg">
-                At Padma Consultancy Services, we're committed to upholding the
+                At Aviate Consulatancy Services, we're committed to upholding the
                 highest standards in regulatory compliance and consultancy. Our
                 core values guide everything we do.
               </p>
