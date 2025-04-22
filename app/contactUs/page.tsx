@@ -85,8 +85,8 @@ export default function ContactPage() {
                   />
                   <div>
                     <h3 className="font-medium text-gray-900">Phone</h3>
-                    <p className="text-gray-600">+1 (555) 123-4567</p>
-                    <p className="text-gray-600">+1 (555) 987-6543</p>
+                    <p className="text-gray-600">9968955004</p>
+                    <p className="text-gray-600">8982253240</p>
                   </div>
                 </div>
 
@@ -114,13 +114,13 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-medium text-gray-900">Address</h3>
                     <p className="text-gray-600">
-                      123 Aviation Boulevard
+                    Aviate Consultancy Services
                       <br />
-                      Suite 500
+                      495/E, Kozhuvelil Building
                       <br />
-                      New York, NY 10001
+                      PIN 682303, Ernakulam
                       <br />
-                      United States
+                      Kerala
                     </p>
                   </div>
                 </div>

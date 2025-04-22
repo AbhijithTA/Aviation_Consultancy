@@ -28,7 +28,9 @@ import {
 
 export default function ServicesPage() {
   const [activeSection, setActiveSection] = useState("regulatory");
-  const [visibleSections, setVisibleSections] = useState<{ [key: string]: boolean }>({});
+  const [visibleSections, setVisibleSections] = useState<{
+    [key: string]: boolean;
+  }>({});
 
   type SectionRefs = {
     hero: React.RefObject<HTMLDivElement | null>;
@@ -40,8 +42,7 @@ export default function ServicesPage() {
     testimonials: React.RefObject<HTMLDivElement | null>;
     contact: React.RefObject<HTMLDivElement | null>;
   };
-  
-  
+
   const sectionRefs: SectionRefs = {
     hero: useRef<HTMLDivElement>(null),
     overview: useRef<HTMLDivElement>(null),
@@ -52,9 +53,7 @@ export default function ServicesPage() {
     testimonials: useRef<HTMLDivElement>(null),
     contact: useRef<HTMLDivElement>(null),
   };
-  
 
-  
   useEffect(() => {
     const observerOptions = {
       threshold: 0.2,
@@ -65,7 +64,7 @@ export default function ServicesPage() {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           setVisibleSections((prev) => ({ ...prev, [entry.target.id]: true }));
-    
+
           if (
             entry.target.id !== "hero" &&
             entry.target.id !== "overview" &&
@@ -78,7 +77,6 @@ export default function ServicesPage() {
         }
       });
     };
-    
 
     const observer = new IntersectionObserver(
       observerCallback,
@@ -101,7 +99,7 @@ export default function ServicesPage() {
   }, []);
 
   const services: Array<{
-    id: keyof SectionRefs; 
+    id: keyof SectionRefs;
     title: string;
     icon: React.ReactNode;
     description: string;
@@ -300,7 +298,7 @@ export default function ServicesPage() {
       section.scrollIntoView({ behavior: "smooth" });
     }
   };
-  
+
   return (
     <>
       <NavbarComponent />
@@ -638,7 +636,7 @@ export default function ServicesPage() {
         </section>
 
         {/* Testimonials Section */}
-        <section
+        {/* <section
           ref={sectionRefs.testimonials}
           id="testimonials"
           className="py-16 md:py-24 bg-gradient-to-r from-indigo-900 to-slate-900 text-white"
@@ -692,8 +690,9 @@ export default function ServicesPage() {
               ))}
             </motion.div>
           </div>
-        </section>
+        </section> */}
 
+       
         {/* Contact Section */}
         <section
           ref={sectionRefs.contact}
