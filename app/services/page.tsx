@@ -376,7 +376,7 @@ export default function ServicesPage() {
               </h2>
               <div className="w-24 h-1 bg-indigo-600 mx-auto mb-6"></div>
               <p className="text-slate-600 max-w-3xl mx-auto text-lg">
-                At Aviate Consulatancy Services, we offer specialized expertise
+                At Aviate Consultancy Services, we offer specialized expertise
                 across regulatory compliance, digital empowerment, and advisory
                 support to help organizations and communities thrive in an
                 increasingly complex world.
