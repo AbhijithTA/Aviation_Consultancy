@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     icon:'/favicon.ico',
   },
   description:
-    "Assistance in access to Welfare Schemes related to Employment promotion under the Ministry of Labour & other Social Welfare Schemes —Bridging the Gap Between Governance and the Digital World.",
+    "Expert aviation consultancy services providing strategic guidance in airline operations, regulatory compliance, aviation safety, and infrastructure development",
 };
 
 export default function RootLayout({
