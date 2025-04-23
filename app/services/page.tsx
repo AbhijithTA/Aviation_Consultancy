@@ -745,7 +745,8 @@ export default function ServicesPage() {
                     <div>
                       <p className="font-medium text-slate-800">Email</p>
                       <p className="text-slate-600">
-                      info@aviationconsultancy.com
+                      	info@aviateconsultancy.com
+                      {/* info2025## */}
                       </p>
                     </div>
                   </div>
