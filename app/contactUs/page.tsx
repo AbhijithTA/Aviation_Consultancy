@@ -98,11 +98,9 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-medium text-gray-900">Email</h3>
                     <p className="text-gray-600">
-                      info@aviationconsultancy.com
+                    info@aviateconsultancy.com
                     </p>
-                    <p className="text-gray-600">
-                      support@aviationconsultancy.com
-                    </p>
+                    
                   </div>
                 </div>
 

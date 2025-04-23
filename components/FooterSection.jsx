@@ -105,7 +105,7 @@ import {
                 </li>
                 <li className="flex items-center">
                   <Mail size={18} className="text-blue-400 mr-3 flex-shrink-0" />
-                  <span className="text-slate-300">info@padmaconsultancy.com</span>
+                  <span className="text-slate-300">info@aviateconsultancy.com</span>
                 </li>
                 <li className="flex items-start">
                   <Clock size={18} className="text-blue-400 mr-3 mt-1 flex-shrink-0" />
