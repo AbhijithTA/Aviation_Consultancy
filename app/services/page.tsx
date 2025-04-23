@@ -734,7 +734,7 @@ export default function ServicesPage() {
                     </div>
                     <div>
                       <p className="font-medium text-slate-800">Phone</p>
-                      <p className="text-slate-600">+91 12345 67890</p>
+                      <p className="text-slate-600">+91 9968955004</p>
                     </div>
                   </div>
 
@@ -745,7 +745,7 @@ export default function ServicesPage() {
                     <div>
                       <p className="font-medium text-slate-800">Email</p>
                       <p className="text-slate-600">
-                        contact@padmaconsultancy.com
+                      info@aviationconsultancy.com
                       </p>
                     </div>
                   </div>
