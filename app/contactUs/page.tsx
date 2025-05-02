@@ -104,7 +104,7 @@ export default function ContactPage() {
                   </div>
                 </div>
 
-                <div className="flex items-start">
+                {/* <div className="flex items-start">
                   <MapPin
                     className="text-amber-500 mr-4 mt-1 flex-shrink-0"
                     size={20}
@@ -121,7 +121,7 @@ export default function ContactPage() {
                       Kerala
                     </p>
                   </div>
-                </div>
+                </div> */}
 
                 <div className="flex items-start">
                   <Clock
@@ -280,7 +280,7 @@ export default function ContactPage() {
 
         {/* Map Section */}
         {/* Map Section */}
-        <div className="w-full h-96 mt-12">
+        {/* <div className="w-full h-96 mt-12">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3929.3066554038137!2d76.39523127503107!3d9.991508190113509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOcKwNTknMjkuNCJOIDc2wrAyMyc1Mi4xIkU!5e0!3m2!1sen!2sin!4v1745315442571!5m2!1sen!2sin"
             width="100%"
@@ -292,7 +292,7 @@ export default function ContactPage() {
             title="Company Location"
             className="w-full h-full"
           ></iframe>
-        </div>
+        </div> */}
       </div>
       <FooterSection />
     </>

@@ -95,10 +95,10 @@ import {
             <div>
               <h4 className="text-lg font-semibold mb-6 border-b border-slate-700 pb-2">Contact Us</h4>
               <ul className="space-y-4">
-                <li className="flex items-start">
+                {/* <li className="flex items-start">
                   <MapPin size={18} className="text-blue-400 mr-3 mt-1 flex-shrink-0" />
                   <span className="text-slate-300"> Aviate Consultancy Services, 495/E, Kozhuvelil Building, Ernakulam, Kerala</span>
-                </li>
+                </li> */}
                 <li className="flex items-center">
                   <Phone size={18} className="text-blue-400 mr-3 flex-shrink-0" />
                   <span className="text-slate-300">+91 9968955004</span>
