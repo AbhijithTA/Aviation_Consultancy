@@ -98,7 +98,15 @@ export default function ServicesPage() {
     };
   }, []);
 
-  const services = [
+  const services: Array<{
+    id: keyof SectionRefs;
+    title: string;
+    icon: React.ReactNode;
+    description: string;
+    color: string;
+    bgImage: string;
+    items: Array<{ text: string; icon: React.ReactNode }>;
+  }> = [
     {
       id: "regulatory",
       title: "Legal & Litigation Support",
