@@ -35,18 +35,25 @@ export default function AboutUsSection() {
                 Welcome to Aviation Consultancy Services
               </h3>
               <p className="text-gray-700 mb-6 leading-relaxed">
-                Your expert partner in regulatory compliance, governance
-                support, and guidance. Backed by over three decades of
-                government experience, we specialize in helping businesses and
-                individuals navigate complex statutory requirements with
-                confidence and ease.
+                This platform reflects the professional advisory practice of
+                Adv. Sasidharan C P Nair, focused on aviation regulatory
+                compliance, security frameworks, and administrative law. It is
+                grounded in extensive experience in government, regulatory
+                enforcement, and legal advisory, with an emphasis on
+                institutional understanding and a preventive approach to
+                compliance.
               </p>
               <p className="text-gray-700 leading-relaxed">
-                Led by a retired Officer from the Government of India (Ministry
-                of Labour), our consultancy is built on the pillars of
-                integrity, innovation, and expertise. We ensure that compliance
-                is not a burden but a seamless process, empowering you to focus
-                on your core activities while we handle the complexities.
+                The practice supports organisations in aviation and allied
+                sectors in maintaining legally sound and operationally
+                sustainable compliance structures, integrating regulatory
+                advisory with legal and enforcement support.
+              </p>
+              <p className="text-gray-700 leading-relaxed">
+                The scope of work may extend to related areas such as
+                contractual and commercial documentation, and where required,
+                engagements may be undertaken in association with other
+                professionals.
               </p>
             </div>
 

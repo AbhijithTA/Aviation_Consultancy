@@ -20,8 +20,8 @@ export default function NavbarComponent() {
             className="rounded"
           />
           <div>
-            <span className="text-xl font-bold tracking-wide text-gray-800 block">AVIATE</span>
-            <span className="text-blue-600 text-sm tracking-wider -mt-1 block font-semibold">CONSULTANCY SERVICES</span>
+            <span className="text-xl font-bold tracking-wide text-gray-800 block">Aviation Regulatory & </span>
+            <span className="text-blue-600 text-sm tracking-wider -mt-1 block font-semibold">Compliance Advisory</span>
           </div>
         </Link>
 

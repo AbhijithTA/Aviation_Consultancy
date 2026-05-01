@@ -30,7 +30,7 @@ export default function ServicesComponent() {
           setIsVisible(true);
         }
       },
-      { threshold: 0.1 }
+      { threshold: 0.1 },
     );
 
     const currentElement = document.getElementById("services-section");
@@ -48,119 +48,110 @@ export default function ServicesComponent() {
   const services = [
     {
       id: 1,
-      title: "Regulatory Compliance & Civil Aviation Advisory",
-      icon: <ShieldCheck size={28} />,
+      title: "Legal & Litigation Support",
+      icon: <Scale size={28} />,
       description:
-        "Comprehensive compliance management and advisory services for civil aviation regulations.",
+        "Advisory and representation support in aviation, administrative, and regulatory legal matters.",
       color: "from-indigo-600 to-indigo-800",
       items: [
         {
-          text: "Compliance management for Civil Aviation Security Regulations",
-          icon: <Plane size={16} />,
+          text: "Advisory in aviation and administrative law matters",
+          icon: <Scale size={16} />,
         },
-        { text: "General business advisory", icon: <Briefcase size={16} /> },
         {
-          text: "Process and support for enforcement orders & compliance checks",
+          text: "Writ proceedings and regulatory dispute support",
           icon: <FileCheck size={16} />,
         },
         {
-          text: "Record maintenance & documentation guidance",
+          text: "Drafting and vetting of contracts and agreements",
           icon: <FileText size={16} />,
         },
         {
-          text: "Preparing documentation for official submissions",
+          text: "ADR support including negotiation and settlements",
+          icon: <Users size={16} />,
+        },
+        {
+          text: "Advisory on insolvency and constitutional matters",
           icon: <ScrollText size={16} />,
         },
         {
-          text: "Assisting in structured document preparation",
-          icon: <FileText size={16} />,
-        },
-        {
-          text: "Compiling regulatory paperwork",
-          icon: <FileCheck size={16} />,
-        },
-        {
-          text: "Developing formal representations",
-          icon: <PenTool size={16} />,
-        },
-        {
-          text: "Supporting procedural documentation",
-          icon: <ScrollText size={16} />,
-        },
-        {
-          text: "Translation services: Malayalam, English, Hindi",
-          icon: <Globe size={16} />,
-        },
-        {
-          text: "E-filing & support in mandatory regulatory compliance",
-          icon: <MonitorSmartphone size={16} />,
+          text: "Court coordination and case briefing",
+          icon: <Briefcase size={16} />,
         },
       ],
     },
     {
       id: 2,
-      title: "E-Governance & Digital Empowerment",
-      icon: <MonitorSmartphone size={28} />,
+      title: "Regulatory Advisory & Compliance",
+      icon: <ShieldCheck size={28} />,
       description:
-        "Digital solutions and support services for accessing government schemes and empowering communities.",
+        "Guidance on aviation laws, regulatory frameworks, and compliance obligations.",
       color: "from-blue-700 to-blue-900",
       items: [
         {
-          text: "Assistance in access to government schemes, documentation & applications",
-          icon: <FileText size={16} />,
+          text: "Interpretation of aviation laws and regulations",
+          icon: <Plane size={16} />,
         },
         {
-          text: "Skill development & vocational training",
-          icon: <GraduationCap size={16} />,
-        },
-        {
-          text: "Digital services for rural empowerment (internet access, IT support)",
-          icon: <Globe size={16} />,
-        },
-        {
-          text: "Support for public welfare laws & statutory benefits",
-          icon: <Scale size={16} />,
-        },
-        {
-          text: "Filing of complaints with regulatory bodies (NC Commission, ST Commission, etc.)",
+          text: "Advisory on approvals, permissions, and compliance",
           icon: <FileCheck size={16} />,
         },
       ],
     },
     {
       id: 3,
-      title: "Advisory & Support Services",
-      icon: <Users size={28} />,
+      title: "Documentation & Regulatory Preparedness",
+      icon: <FileText size={28} />,
       description:
-        "Expert guidance and advocacy for information access, dispute resolution, and social justice.",
+        "Structured documentation support and preparation for regulatory processes.",
       color: "from-slate-700 to-slate-900",
       items: [
         {
-          text: "Assistance in Information Access Requests (RTI applications & consumer protection processes)",
-          icon: <FileText size={16} />,
+          text: "Drafting and review of regulatory submissions",
+          icon: <PenTool size={16} />,
         },
         {
-          text: "Facilitation of Dispute Resolution Processes (guidance on mediation & ADR mechanisms)",
-          icon: <Scale size={16} />,
-        },
-        {
-          text: "Regulatory & Compliance Support (property documentation, procedural filings)",
+          text: "Audit and inspection preparedness",
           icon: <ShieldCheck size={16} />,
         },
         {
-          text: "Conflict Resolution Guidance (ADR awareness & coordination support)",
-          icon: <Users size={16} />,
+          text: "Preparation of NDAs, MoUs, and commercial agreements",
+          icon: <FileText size={16} />,
+        },
+      ],
+    },
+    {
+      id: 4,
+      title: "Enforcement & Proceedings Support",
+      icon: <FileCheck size={28} />,
+      description:
+        "Support in handling regulatory actions, notices, and proceedings.",
+      color: "from-indigo-700 to-indigo-900",
+      items: [
+        {
+          text: "Advisory on notices and show cause proceedings",
+          icon: <ScrollText size={16} />,
         },
         {
-          text: "Social Justice & Human Rights Advocacy",
-          icon: <Scale size={16} />,
+          text: "Structured response to regulatory communications",
+          icon: <PenTool size={16} />,
+        },
+      ],
+    },
+    {
+      id: 5,
+      title: "Internal Compliance & Risk Assessment",
+      icon: <ShieldCheck size={28} />,
+      description:
+        "Assessment and strengthening of compliance systems and risk frameworks.",
+      color: "from-slate-800 to-slate-900",
+      items: [
+        {
+          text: "Identification of regulatory and compliance gaps",
+          icon: <FileCheck size={16} />,
         },
         {
-          text: "Public Awareness & Rights Education (informational sessions, training programs)",
-          icon: <GraduationCap size={16} />,
-        },
-        {
-          text: "Specialized Partner Services in Rural Finance & Mobility Solutions",
+          text: "Improving compliance systems and documentation",
           icon: <Briefcase size={16} />,
         },
       ],

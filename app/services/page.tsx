@@ -80,7 +80,7 @@ export default function ServicesPage() {
 
     const observer = new IntersectionObserver(
       observerCallback,
-      observerOptions
+      observerOptions,
     );
 
     Object.values(sectionRefs).forEach((ref) => {
@@ -98,133 +98,118 @@ export default function ServicesPage() {
     };
   }, []);
 
-  const services: Array<{
-    id: keyof SectionRefs;
-    title: string;
-    icon: React.ReactNode;
-    description: string;
-    color: string;
-    bgImage: string;
-    items: Array<{ text: string; icon: React.ReactNode }>;
-  }> = [
+  const services = [
     {
       id: "regulatory",
-      title: "Regulatory Compliance & Civil Aviation Advisory",
-      icon: <ShieldCheck size={32} />,
+      title: "Legal & Litigation Support",
+      icon: <Scale size={32} />,
       description:
-        "Comprehensive compliance management and advisory services for civil aviation regulations, ensuring your operations meet all legal requirements and industry standards.",
+        "Advisory and representation in aviation, administrative, and regulatory legal matters.",
       color: "from-indigo-600 to-indigo-800",
       bgImage: "/images/aviation-bg.jpg",
       items: [
         {
-          text: "Compliance management for Civil Aviation Security Regulations",
-          icon: <Plane size={18} />,
+          text: "Advisory in aviation and administrative law",
+          icon: <Scale size={18} />,
         },
-        { text: "General business advisory", icon: <Briefcase size={18} /> },
         {
-          text: "Process and support for enforcement orders & compliance checks",
+          text: "Writ proceedings and regulatory disputes",
           icon: <FileCheck size={18} />,
         },
         {
-          text: "Record maintenance & documentation guidance",
+          text: "Drafting and vetting of contracts and agreements",
           icon: <FileText size={18} />,
         },
         {
-          text: "Preparing documentation for official submissions",
+          text: "ADR support including negotiation and settlements",
+          icon: <Users size={18} />,
+        },
+        {
+          text: "Insolvency and constitutional advisory (as applicable)",
           icon: <ScrollText size={18} />,
         },
         {
-          text: "Assisting in structured document preparation",
-          icon: <FileText size={18} />,
-        },
-        {
-          text: "Compiling regulatory paperwork",
-          icon: <FileCheck size={18} />,
-        },
-        {
-          text: "Developing formal representations",
-          icon: <PenTool size={18} />,
-        },
-        {
-          text: "Supporting procedural documentation",
-          icon: <ScrollText size={18} />,
-        },
-        {
-          text: "Translation services: Malayalam, English, Hindi",
-          icon: <Globe size={18} />,
-        },
-        {
-          text: "E-filing & support in mandatory regulatory compliance",
-          icon: <MonitorSmartphone size={18} />,
+          text: "Court coordination and briefing support",
+          icon: <Briefcase size={18} />,
         },
       ],
     },
     {
       id: "governance",
-      title: "E-Governance & Digital Empowerment",
-      icon: <MonitorSmartphone size={32} />,
+      title: "Regulatory Advisory & Compliance",
+      icon: <ShieldCheck size={32} />,
       description:
-        "Digital solutions and support services for accessing government schemes and empowering communities through technology and skill development.",
+        "Guidance on aviation laws, regulatory frameworks, and compliance obligations.",
       color: "from-blue-600 to-blue-800",
       bgImage: "/images/digital-bg.jpg",
       items: [
         {
-          text: "Assistance in access to government schemes, documentation & applications",
-          icon: <FileText size={18} />,
+          text: "Interpretation of aviation laws and rules",
+          icon: <Plane size={18} />,
         },
         {
-          text: "Skill development & vocational training",
-          icon: <GraduationCap size={18} />,
-        },
-        {
-          text: "Digital services for rural empowerment (internet access, IT support)",
-          icon: <Globe size={18} />,
-        },
-        {
-          text: "Support for public welfare laws & statutory benefits",
-          icon: <Scale size={18} />,
-        },
-        {
-          text: "Filing of complaints with regulatory bodies (NC Commission, ST Commission, etc.)",
+          text: "Advisory on approvals and compliance requirements",
           icon: <FileCheck size={18} />,
         },
       ],
     },
     {
       id: "advisory",
-      title: "Advisory & Support Services",
-      icon: <Users size={32} />,
+      title: "Documentation & Regulatory Preparedness",
+      icon: <FileText size={32} />,
       description:
-        "Expert guidance and advocacy for information access, dispute resolution, and social justice, ensuring your rights are protected and voices heard.",
+        "Structured documentation and readiness support for regulatory processes.",
       color: "from-slate-700 to-slate-900",
       bgImage: "/images/advisory-bg.jpg",
       items: [
         {
-          text: "Assistance in Information Access Requests (RTI applications & consumer protection processes)",
-          icon: <FileText size={18} />,
+          text: "Drafting and review of regulatory submissions",
+          icon: <PenTool size={18} />,
         },
         {
-          text: "Facilitation of Dispute Resolution Processes (guidance on mediation & ADR mechanisms)",
-          icon: <Scale size={18} />,
-        },
-        {
-          text: "Regulatory & Compliance Support (property documentation, procedural filings)",
+          text: "Audit and inspection preparedness",
           icon: <ShieldCheck size={18} />,
         },
         {
-          text: "Conflict Resolution Guidance (ADR awareness & coordination support)",
-          icon: <Users size={18} />,
+          text: "Preparation of NDAs, MoUs, and commercial agreements",
+          icon: <FileText size={18} />,
+        },
+      ],
+    },
+    {
+      id: "process",
+      title: "Enforcement & Proceedings Support",
+      icon: <FileCheck size={32} />,
+      description:
+        "Support in handling notices, regulatory actions, and proceedings.",
+      color: "from-indigo-700 to-indigo-900",
+      bgImage: "/images/aviation-bg.jpg",
+      items: [
+        {
+          text: "Advisory on notices and show cause proceedings",
+          icon: <ScrollText size={18} />,
         },
         {
-          text: "Social Justice & Human Rights Advocacy",
-          icon: <Scale size={18} />,
+          text: "Structured response to regulatory communications",
+          icon: <PenTool size={18} />,
+        },
+      ],
+    },
+    {
+      id: "testimonials",
+      title: "Internal Compliance & Risk Assessment",
+      icon: <ShieldCheck size={32} />,
+      description:
+        "Assessment and strengthening of compliance systems and risk frameworks.",
+      color: "from-slate-800 to-slate-900",
+      bgImage: "/images/digital-bg.jpg",
+      items: [
+        {
+          text: "Identification of regulatory and compliance gaps",
+          icon: <FileCheck size={18} />,
         },
         {
-          text: "Public Awareness & Rights Education (informational sessions, training programs)",
-          icon: <GraduationCap size={18} />,
-        },
-        {
-          text: "Specialized Partner Services in Rural Finance & Mobility Solutions",
+          text: "Strengthening compliance systems and documentation",
           icon: <Briefcase size={18} />,
         },
       ],
@@ -538,11 +523,17 @@ export default function ServicesPage() {
                         Our Approach
                       </h4>
                       <p className="mb-4">
-                        We take a client-centered approach, focusing on your
-                        specific needs and developing customized solutions that
-                        address your unique challenges. Our process ensures
-                        thorough attention to detail while maintaining the
-                        highest standards of professional service.
+                        The advisory approach is grounded in regulatory clarity,
+                        structured compliance, and disciplined documentation
+                        practices. It emphasizes audit preparedness,
+                        risk-informed decision-making, and alignment with
+                        applicable domestic regulations and international
+                        standards.
+                      </p>
+                      <p className="mb-4">
+                        The objective is to establish compliance frameworks that
+                        are preventive, consistent, and operationally
+                        sustainable.
                       </p>
 
                       <h4 className="text-lg font-medium text-slate-800 mt-8 mb-4">
@@ -554,8 +545,8 @@ export default function ServicesPage() {
                           {service.id === "regulatory"
                             ? "aviation regulations"
                             : service.id === "governance"
-                            ? "digital governance"
-                            : "advisory services"}
+                              ? "digital governance"
+                              : "advisory services"}
                         </li>
                         <li>
                           Dedicated team of professionals committed to your
@@ -692,7 +683,6 @@ export default function ServicesPage() {
           </div>
         </section> */}
 
-       
         {/* Contact Section */}
         <section
           ref={sectionRefs.contact}
@@ -745,8 +735,8 @@ export default function ServicesPage() {
                     <div>
                       <p className="font-medium text-slate-800">Email</p>
                       <p className="text-slate-600">
-                      	info@aviateconsultancy.com
-                      {/* info2025## */}
+                        info@aviateconsultancy.com
+                        {/* info2025## */}
                       </p>
                     </div>
                   </div>

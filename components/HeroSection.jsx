@@ -9,33 +9,28 @@ export default function AviationComplianceHero() {
           {/* Text Content */}
           <div className="w-full md:w-1/2 space-y-6">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-800 leading-tight">
-              Your <span className="text-blue-600">Trusted Partner</span> in
-              Compliance & Regulatory Support Across Civil Aviation
+              Integrated{" "}
+              <span className="text-blue-600">Regulatory & Legal Advisory</span>{" "}
+              in the Aviation Sector
             </h1>
-
             <p className="text-slate-700 text-lg font-medium">
-              Delivering affordable, reliable, and hassle-free solutions to
-              ensure statutory adherence and regulatory excellence—tailored to
-              your needs while mitigating legal challenges
+              Independent advisory in aviation regulatory, compliance, and
+              related matters, supported by legal expertise.
             </p>
 
             <h2 className="text-xl md:text-2xl text-slate-700 font-semibold pt-2 capitalize">
-            our Trusted Partner in Compliance & Regulatory Support Across Civil Aviation
+              our Trusted Partner in Compliance & Regulatory Support Across
+              Civil Aviation
             </h2>
 
             <div className="bg-white shadow-lg rounded-lg p-6 border-l-4 border-blue-600 mt-6">
               <div className="space-y-3">
                 <p className="text-slate-600 font-medium">
-                  Facilitating connections to government welfare programs and
-                  employment opportunities—bridging the gap between governance and
-                  the digital world.
-                </p>
-                <p className="text-slate-600 font-medium">
-                  Struggling with complex compliance requirements or legal
-                  challenges in the aviation sector?
-                </p>
-                <p className="text-slate-600 font-medium">
-                  Facing difficulties in the digital world? Let us simplify the process for you.
+                  This platform presents professional advisory services in the
+                  domain of aviation regulatory compliance and associated
+                  governance frameworks. The focus is on supporting
+                  organisations in navigating complex regulatory environments
+                  with clarity, preparedness, and consistency.
                 </p>
               </div>
               <Link href="/contactUs">
