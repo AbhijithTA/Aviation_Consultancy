@@ -51,7 +51,7 @@ export default function ContactPage() {
     <>
       <NavbarComponent />
 
-      <main className="w-full bg-white min-h-screen">
+      <main className="w-full bg-white min-h-screen pt-16">
         <div className="container mx-auto px-6 py-14 md:py-20 max-w-4xl">
           {/* Page Heading */}
           <h1

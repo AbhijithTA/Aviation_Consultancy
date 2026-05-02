@@ -2,10 +2,8 @@ import Link from "next/link";
 
 export default function AviationComplianceHero() {
   return (
-    <section className="w-full bg-white border-b border-gray-200">
+    <section className="w-full bg-white border-b border-gray-200 pt-16">
       <div className="container mx-auto px-6 py-14 md:py-20 max-w-4xl">
-        {/* Page Label */}
-
         {/* Main Heading */}
         <h1
           className="text-slate-800 leading-snug mb-4 mt-3"
