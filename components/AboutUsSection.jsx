@@ -1,148 +1,127 @@
-"use client";
-
-import { useState, useEffect } from "react";
-import { PlaneTakeoff, Shield, Award, Users } from "lucide-react";
-import Link from "next/link";
-
 export default function AboutUsSection() {
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    setIsVisible(true);
-  }, []);
-
   return (
-    <section
-      className={`bg-gradient-to-br from-sky-50 to-blue-100 py-16 transition-opacity duration-1000 ${
-        isVisible ? "opacity-100" : "opacity-0"
-      }`}
-    >
-      <div className="container mx-auto px-6 max-w-6xl">
-        {/* Header Section */}
-        <div className="mb-12 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-2">
-            About Us
-          </h2>
-          <div className="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
-        </div>
+    <section className="w-full bg-white border-b border-gray-200">
+      <div className="container mx-auto px-6 py-14 md:py-20 max-w-4xl">
+        {/* Section Heading */}
+        <h1
+          className="text-slate-800 leading-snug mb-8"
+          style={{
+            fontFamily: "Georgia, serif",
+            fontSize: "16px",
+            fontWeight: "bold",
+          }}
+        >
+          About the Practice
+        </h1>
 
-        {/* Main Content */}
-        <div className="flex flex-col lg:flex-row gap-12 items-center">
-          {/* Left Column - Content */}
-          <div className="lg:w-3/5">
-            <div className="bg-white rounded-lg shadow-lg p-8 mb-8 transform transition hover:shadow-xl">
-              <h3 className="text-2xl font-semibold text-blue-800 mb-4">
-                Welcome to Aviation Consultancy Services
-              </h3>
-              <p className="text-gray-700 mb-6 leading-relaxed">
-                This platform reflects the professional advisory practice of
-                Adv. Sasidharan C P Nair, focused on aviation regulatory
-                compliance, security frameworks, and administrative law. It is
-                grounded in extensive experience in government, regulatory
-                enforcement, and legal advisory, with an emphasis on
-                institutional understanding and a preventive approach to
-                compliance.
-              </p>
-              <p className="text-gray-700 leading-relaxed">
-                The practice supports organisations in aviation and allied
-                sectors in maintaining legally sound and operationally
-                sustainable compliance structures, integrating regulatory
-                advisory with legal and enforcement support.
-              </p>
-              <p className="text-gray-700 leading-relaxed">
-                The scope of work may extend to related areas such as
-                contractual and commercial documentation, and where required,
-                engagements may be undertaken in association with other
-                professionals.
-              </p>
-            </div>
+        {/* Divider */}
+        <div className="border-t border-gray-200 mb-8" />
 
-            {/* Values */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <div className="bg-white p-6 rounded-lg shadow-md text-center flex flex-col h-full">
-                <div className="inline-flex items-center justify-center w-12 h-12 bg-blue-100 rounded-full mb-4 mx-auto">
-                  <Shield className="text-blue-700" size={24} />
-                </div>
-                <h4 className="text-lg font-semibold text-blue-800 mb-2">
-                  Integrity
-                </h4>
-                <p className="text-gray-600 text-sm mt-auto">
-                  Transparent, honest and ethical practices in all consultations
-                  for meaningful connections
-                </p>
-              </div>
+        {/* Paragraph 1 */}
+        <p
+          className="text-slate-700 leading-relaxed mb-6"
+          style={{ fontFamily: "Arial, sans-serif", fontSize: "12px" }}
+        >
+          The practice focuses on aviation regulatory compliance, security
+          frameworks, and administrative law, drawing from experience in
+          government service, regulatory processes, and legal proceedings before
+          appropriate forums.
+        </p>
 
-              <div className="bg-white p-6 rounded-lg shadow-md text-center flex flex-col h-full">
-                <div className="inline-flex items-center justify-center w-12 h-12 bg-blue-100 rounded-full mb-4 mx-auto">
-                  <Award className="text-blue-700" size={24} />
-                </div>
-                <h4 className="text-lg font-semibold text-blue-800 mb-2">
-                  Expertise
-                </h4>
-                <p className="text-gray-600 text-sm mt-auto">
-                  Drawing from decades of government experience
-                </p>
-              </div>
+        {/* Paragraph 2 */}
+        <p
+          className="text-slate-700 leading-relaxed mb-6"
+          style={{ fontFamily: "Arial, sans-serif", fontSize: "12px" }}
+        >
+          Organisations operating in regulated environments often encounter
+          practical challenges in areas such as interpretation of regulatory
+          requirements, digitisation and evolving compliance systems,
+          maintenance of documentation standards, and responses to inspections
+          or enforcement actions. Variations in regulatory understanding and
+          documentation practices may lead to gaps in compliance and
+          preparedness.
+        </p>
 
-              <div className="bg-white p-6 rounded-lg shadow-md text-center flex flex-col h-full">
-                <div className="inline-flex items-center justify-center w-12 h-12 bg-blue-100 rounded-full mb-4 mx-auto">
-                  <Users className="text-blue-700" size={24} />
-                </div>
-                <h4 className="text-lg font-semibold text-blue-800 mb-2">
-                  Innovation
-                </h4>
-                <p className="text-gray-600 text-sm mt-auto overflow-y-auto max-h-20">
-                  Innovating modern solutions to navigate complex compliance
-                  challenges, fostering seamless adaptation to dynamic
-                  regulatory environments in harmony with regulators.
-                </p>
-              </div>
-            </div>
-          </div>
+        {/* Sub-heading */}
+        <h2
+          className="text-slate-800 mb-4"
+          style={{
+            fontFamily: "Georgia, serif",
+            fontSize: "14px",
+            fontWeight: "bold",
+          }}
+        >
+          Some commonly observed areas include:
+        </h2>
 
-          {/* Right Column - Image and CTA */}
-          <div className="lg:w-2/5">
-            <div className="relative">
-              <div className="bg-blue-800 absolute -top-2 -left-2 w-full h-full rounded-lg"></div>
-              <div className="relative bg-white rounded-lg shadow-lg overflow-hidden">
-                <div className="bg-blue-700 p-6 text-white">
-                  <div className="flex items-center justify-center mb-4">
-                    <PlaneTakeoff size={36} />
-                  </div>
-                  <h3 className="text-xl font-bold text-center mb-2">
-                    Aviation Compliance Experts
-                  </h3>
-                  <p className="text-blue-100 text-center text-sm mb-4">
-                    Navigating regulatory skies with precision
-                  </p>
-                </div>
+        {/* Bullet list */}
+        <ul
+          className="text-slate-700 leading-relaxed mb-8 space-y-3"
+          style={{
+            fontFamily: "Arial, sans-serif",
+            fontSize: "12px",
+            paddingLeft: "1.25rem",
+            listStyleType: "disc",
+          }}
+        >
+          <li>
+            Incomplete or inconsistent documentation affecting demonstration of
+            compliance, leading to delays in approvals and regulatory processes
+          </li>
+          <li>Gaps between operational practices and documented procedures</li>
+          <li>
+            Limited preparedness for inspections, audits, or regulatory reviews
+          </li>
+          <li>
+            Delays or inconsistencies in responding to regulatory communications
+          </li>
+          <li>Overlap of responsibilities leading to unclear accountability</li>
+          <li>Changing regulatory expectations requiring ongoing adaptation</li>
+          <li>
+            Difficulties in handling digital compliance systems and regulatory
+            platforms
+          </li>
+          <li>
+            Limited awareness of applicable duties, rights, and procedural
+            requirements
+          </li>
+          <li>
+            Challenges in coordinating between operational, compliance, and
+            external stakeholders
+          </li>
+          <li>Complexity arising from multiple regulatory authorities</li>
+          <li>
+            Sector-specific regulatory requirements, including those relating to
+            national security and foreign investment
+          </li>
+          <li>
+            Situations involving operational or financial distress, including
+            issues relating to grounding, repossession, or deregistration of
+            assets
+          </li>
+        </ul>
 
-                <div className="p-6">
-                  <img
-                    src="/images/AboutUs.jpg"
-                    alt="Aviation consultancy team"
-                    className="rounded-lg shadow-md mb-6 w-full"
-                  />
-                  <div className="flex justify-center">
-                    <Link href="/contactUs">
-                      <button className="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full font-medium transition-all duration-300 transform hover:scale-105 shadow-md">
-                        Contact Our Team
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        {/* Paragraph 3 */}
+        <p
+          className="text-slate-700 leading-relaxed mb-6"
+          style={{ fontFamily: "Arial, sans-serif", fontSize: "12px" }}
+        >
+          These observations are based on exposure to regulatory and
+          administrative processes. The approach to addressing such matters
+          remains centred on clarity in regulatory interpretation, documentation
+          discipline, and preparedness in compliance-related matters.
+        </p>
 
-        {/* Aviation Specific Badge */}
-        <div className="mt-16 text-center">
-          <div className="inline-flex items-center px-4 py-2 bg-blue-900 text-white rounded-full text-sm">
-            <PlaneTakeoff size={16} className="mr-2" />
-            <span>Specializing in Aviation Regulatory Compliance</span>
-          </div>
-        </div>
+        {/* Paragraph 4 */}
+        <p
+          className="text-slate-700 leading-relaxed"
+          style={{ fontFamily: "Arial, sans-serif", fontSize: "12px" }}
+        >
+          The scope of work may extend to related legal areas, including
+          applicable aviation statutes, regulatory guidelines, and contractual
+          documentation, and may involve coordination with other professionals
+          depending on the nature of the requirement.
+        </p>
       </div>
     </section>
   );

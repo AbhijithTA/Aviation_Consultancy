@@ -1,120 +1,77 @@
-import { PhoneCall } from "lucide-react";
 import Link from "next/link";
 
 export default function AviationComplianceHero() {
   return (
-    <section className="w-full overflow-hidden bg-slate-50 pt-2.5">
-      <div className="container mx-auto px-4 py-12 md:py-20">
-        <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-8 lg:gap-16">
-          {/* Text Content */}
-          <div className="w-full md:w-1/2 space-y-6">
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-800 leading-tight">
-              Integrated{" "}
-              <span className="text-blue-600">Regulatory & Legal Advisory</span>{" "}
-              in the Aviation Sector
-            </h1>
-            <p className="text-slate-700 text-lg font-medium">
-              Independent advisory in aviation regulatory, compliance, and
-              related matters, supported by legal expertise.
-            </p>
+    <section className="w-full bg-white border-b border-gray-200">
+      <div className="container mx-auto px-6 py-14 md:py-20 max-w-4xl">
+        {/* Page Label */}
 
-            <h2 className="text-xl md:text-2xl text-slate-700 font-semibold pt-2 capitalize">
-              our Trusted Partner in Compliance & Regulatory Support Across
-              Civil Aviation
-            </h2>
+        {/* Main Heading */}
+        <h1
+          className="text-slate-800 leading-snug mb-4 mt-3"
+          style={{
+            fontFamily: "Georgia, serif",
+            fontSize: "16px",
+            fontWeight: "bold",
+          }}
+        >
+          Aviation Regulatory &amp; Compliance Advisory
+        </h1>
 
-            <div className="bg-white shadow-lg rounded-lg p-6 border-l-4 border-blue-600 mt-6">
-              <div className="space-y-3">
-                <p className="text-slate-600 font-medium">
-                  This platform presents professional advisory services in the
-                  domain of aviation regulatory compliance and associated
-                  governance frameworks. The focus is on supporting
-                  organisations in navigating complex regulatory environments
-                  with clarity, preparedness, and consistency.
-                </p>
-              </div>
-              <Link href="/contactUs">
-                <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-all flex items-center justify-center gap-2 mt-4 shadow-md">
-                  Contact Us
-                  <PhoneCall size={18} />
-                </button>
-              </Link>
-            </div>
+        {/* Sub-heading */}
+        <h2
+          className="text-slate-700 mb-8"
+          style={{
+            fontFamily: "Georgia, serif",
+            fontSize: "14px",
+            fontWeight: "normal",
+          }}
+        >
+          Legal and regulatory advisory in the aviation sector
+        </h2>
 
-            <div className="flex items-center gap-4 pt-4">
-              <div className="flex -space-x-2">
-                <div className="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center text-white text-sm font-medium border-2 border-white">
-                  CA
-                </div>
-                <div className="w-10 h-10 rounded-full bg-green-500 flex items-center justify-center text-white text-sm font-medium border-2 border-white">
-                  RS
-                </div>
-                <div className="w-10 h-10 rounded-full bg-purple-500 flex items-center justify-center text-white text-sm font-medium border-2 border-white">
-                  WS
-                </div>
-              </div>
-              <p className="text-slate-500 text-sm">
-                <span className="font-semibold">Expert</span> compliance
-                advisors
-              </p>
-            </div>
-          </div>
+        {/* Divider */}
+        <div className="border-t border-gray-200 mb-8" />
 
-          {/* Image Side */}
-          <div className="w-full md:w-1/2 relative">
-            <div className="w-full h-60 sm:h-80 md:h-96 lg:h-full relative rounded-2xl overflow-hidden shadow-xl">
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-blue-600/5 z-10"></div>
-              <img
-                src="/images/heroSection.jpg"
-                alt="Aviation Compliance and Regulatory Support"
-                className="w-full h-full object-cover"
-              />
-            </div>
+        {/* Body paragraph 1 */}
+        <p
+          className="text-slate-700 mb-6 leading-relaxed"
+          style={{ fontFamily: "Arial, sans-serif", fontSize: "12px" }}
+        >
+          Independent advisory in aviation regulatory and compliance matters,
+          grounded in legal practice and regulatory experience.
+        </p>
 
-            {/* Floating stats card */}
-            <div className="absolute -bottom-4 -left-4 md:bottom-12 md:-left-6 bg-white p-4 rounded-lg shadow-lg max-w-xs hidden sm:block">
-              <div className="flex items-center gap-3">
-                <div className="bg-blue-100 p-3 rounded-lg">
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M9 5H7C5.89543 5 5 5.89543 5 7V19C5 20.1046 5.89543 21 7 21H17C18.1046 21 19 20.1046 19 19V7C19 5.89543 18.1046 5 17 5H15"
-                      stroke="#2563EB"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      d="M9 9L12 12L15 9"
-                      stroke="#2563EB"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      d="M12 3V12"
-                      stroke="#2563EB"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </div>
-                <div>
-                  <p className="text-slate-500 text-sm">Compliance Success</p>
-                  <p className="text-slate-800 font-semibold">
-                    100% Approval Rate
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        {/* Introduction sub-heading */}
+        <h2
+          className="text-slate-800 mb-4"
+          style={{
+            fontFamily: "Georgia, serif",
+            fontSize: "14px",
+            fontWeight: "bold",
+          }}
+        >
+          Introduction
+        </h2>
+
+        {/* Body paragraph 2 */}
+        <p
+          className="text-slate-700 leading-relaxed mb-10"
+          style={{ fontFamily: "Arial, sans-serif", fontSize: "12px" }}
+        >
+          This platform presents the professional profile of Adv. Sasidharan C P
+          in the field of aviation regulatory compliance and related governance
+          matters.
+        </p>
+
+        {/* Contact link — neutral, text-only */}
+        <Link
+          href="/contactUs"
+          className="inline-block border border-slate-700 text-slate-700 hover:bg-slate-700 hover:text-white transition-colors px-5 py-2"
+          style={{ fontFamily: "Arial, sans-serif", fontSize: "12px" }}
+        >
+          Contact
+        </Link>
       </div>
     </section>
   );

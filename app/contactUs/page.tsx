@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { Send, Phone, Mail, MapPin, Clock } from "lucide-react";
 import NavbarComponent from "@/components/Navbar";
 import FooterSection from "@/components/FooterSection";
 
@@ -14,205 +13,351 @@ export default function ContactPage() {
     message: "",
   });
 
-  const [formStatus, setFormStatus] = useState({
-    submitted: false,
-    error: false,
-  });
+  const [submitted, setSubmitted] = useState(false);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
     console.log("Form submitted:", formData);
+    setSubmitted(true);
+    setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
+    setTimeout(() => setSubmitted(false), 5000);
+  };
 
-    setFormStatus({ submitted: true, error: false });
+  const labelStyle: React.CSSProperties = {
+    fontFamily: "Arial, sans-serif",
+    fontSize: "12px",
+    color: "#374151",
+  };
 
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      subject: "",
-      message: "",
-    });
-
-    setTimeout(() => {
-      setFormStatus({ submitted: false, error: false });
-    }, 5000);
+  const inputStyle: React.CSSProperties = {
+    fontFamily: "Arial, sans-serif",
+    fontSize: "12px",
+    width: "100%",
+    padding: "8px 10px",
+    border: "1px solid #d1d5db",
+    outline: "none",
+    color: "#374151",
+    backgroundColor: "#fff",
   };
 
   return (
     <>
       <NavbarComponent />
-      <div className="pt-10 bg-gray-50 min-h-screen">
-        {/* Header */}
-        <div className="bg-sky-700 text-white py-16">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h1 className="text-4xl font-bold text-center mb-2">Contact Us</h1>
-            <p className="text-xl text-center text-sky-100">
-              For professional advisory in aviation regulatory compliance and
-              legal matters.
-            </p>
-          </div>
-        </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Contact Info */}
-            <div className="md:col-span-1 bg-white rounded-lg shadow-md p-6">
-              <h2 className="text-2xl font-semibold text-sky-800 mb-6">
+      <main className="w-full bg-white min-h-screen">
+        <div className="container mx-auto px-6 py-14 md:py-20 max-w-4xl">
+          {/* Page Heading */}
+          <h1
+            className="text-slate-800 leading-snug mb-4 mt-3"
+            style={{
+              fontFamily: "Georgia, serif",
+              fontSize: "16px",
+              fontWeight: "bold",
+            }}
+          >
+            Contact
+          </h1>
+
+          {/* Sub-heading */}
+          <h2
+            className="text-slate-700 mb-8"
+            style={{
+              fontFamily: "Georgia, serif",
+              fontSize: "14px",
+              fontWeight: "normal",
+            }}
+          >
+            For professional advisory in aviation regulatory compliance and
+            legal matters.
+          </h2>
+
+          {/* Divider */}
+          <div className="border-t border-gray-200 mb-10" />
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            {/* Contact Information */}
+            <div>
+              <h2
+                className="text-slate-800 mb-6"
+                style={{
+                  fontFamily: "Georgia, serif",
+                  fontSize: "14px",
+                  fontWeight: "bold",
+                }}
+              >
                 Contact Information
               </h2>
 
-              <div className="space-y-6">
-                {/* Name */}
+              <div className="space-y-5">
+                {/* Name & Title */}
                 <div>
-                  <h3 className="font-medium text-gray-900">
-                    Adv. Sasidharan C P Nair
-                  </h3>
-                  <p className="text-gray-600">Advocate</p>
-                  <p className="text-gray-600 text-sm">
-                    Aviation Regulatory & Security Compliance Consultant
+                  <p
+                    className="text-slate-800"
+                    style={{
+                      fontFamily: "Arial, sans-serif",
+                      fontSize: "12px",
+                      fontWeight: "bold",
+                    }}
+                  >
+                    Adv. Sasidharan C P
+                  </p>
+                  <p
+                    className="text-slate-600"
+                    style={{
+                      fontFamily: "Arial, sans-serif",
+                      fontSize: "12px",
+                    }}
+                  >
+                    Advocate
+                  </p>
+                  <p
+                    className="text-slate-600"
+                    style={{
+                      fontFamily: "Arial, sans-serif",
+                      fontSize: "12px",
+                    }}
+                  >
+                    Aviation Regulatory &amp; Compliance Advisory
                   </p>
                 </div>
 
+                <div className="border-t border-gray-100" />
+
                 {/* Phone */}
-                <div className="flex items-start">
-                  <Phone className="text-amber-500 mr-4 mt-1" size={20} />
-                  <div>
-                    <h3 className="font-medium text-gray-900">Phone</h3>
-                    <p className="text-gray-600">+91 8800171269</p>
-                    <p className="text-gray-600">+91 8156828115</p>
-                  </div>
+                <div>
+                  <p
+                    className="text-slate-800 mb-1"
+                    style={{
+                      fontFamily: "Georgia, serif",
+                      fontSize: "13px",
+                      fontWeight: "bold",
+                    }}
+                  >
+                    Phone
+                  </p>
+                  <p
+                    className="text-slate-600"
+                    style={{
+                      fontFamily: "Arial, sans-serif",
+                      fontSize: "12px",
+                    }}
+                  >
+                    +91 8800171269
+                  </p>
+                  <p
+                    className="text-slate-600"
+                    style={{
+                      fontFamily: "Arial, sans-serif",
+                      fontSize: "12px",
+                    }}
+                  >
+                    +91 8156828115
+                  </p>
                 </div>
 
                 {/* Email */}
-                <div className="flex items-start">
-                  <Mail className="text-amber-500 mr-4 mt-1" size={20} />
-                  <div>
-                    <h3 className="font-medium text-gray-900">Email</h3>
-                    <p className="text-gray-600">sasidharann277@gmail.com</p>
-                  </div>
+                <div>
+                  <p
+                    className="text-slate-800 mb-1"
+                    style={{
+                      fontFamily: "Georgia, serif",
+                      fontSize: "13px",
+                      fontWeight: "bold",
+                    }}
+                  >
+                    Email
+                  </p>
+                  <p
+                    className="text-slate-600"
+                    style={{
+                      fontFamily: "Arial, sans-serif",
+                      fontSize: "12px",
+                    }}
+                  >
+                    sasidharann277@gmail.com
+                  </p>
                 </div>
 
                 {/* Address */}
-                <div className="flex items-start">
-                  <MapPin className="text-amber-500 mr-4 mt-1" size={20} />
-                  <div>
-                    <h3 className="font-medium text-gray-900">Address</h3>
-                    <p className="text-gray-600">
-                      Puthen Puthusseri Building, Door No. 11/631
-                      <br />
-                      Opposite Airport Cargo Gate
-                      <br />
-                      Cochin International Airport Limited (Airport Old Road)
-                      <br />
-                      Nedumbasseri, Cochin – 683111, Kerala
-                    </p>
-                  </div>
+                <div>
+                  <p
+                    className="text-slate-800 mb-1"
+                    style={{
+                      fontFamily: "Georgia, serif",
+                      fontSize: "13px",
+                      fontWeight: "bold",
+                    }}
+                  >
+                    Address
+                  </p>
+                  <p
+                    className="text-slate-600 leading-relaxed"
+                    style={{
+                      fontFamily: "Arial, sans-serif",
+                      fontSize: "12px",
+                    }}
+                  >
+                    Puthen Puthusseri Building, Door No. 11/631
+                    <br />
+                    Opposite Airport Cargo Gate
+                    <br />
+                    Cochin International Airport Limited (Airport Old Road)
+                    <br />
+                    Nedumbasseri, Cochin – 683111, Kerala
+                  </p>
                 </div>
 
                 {/* Hours */}
-                <div className="flex items-start">
-                  <Clock className="text-amber-500 mr-4 mt-1" size={20} />
-                  <div>
-                    <h3 className="font-medium text-gray-900">
-                      Business Hours
-                    </h3>
-                    <p className="text-gray-600">
-                      Monday - Friday: 3:00 PM - 5:00 PM
-                    </p>
-                    <p className="text-gray-600">Saturday & Sunday: Closed</p>
-                  </div>
+                <div>
+                  <p
+                    className="text-slate-800 mb-1"
+                    style={{
+                      fontFamily: "Georgia, serif",
+                      fontSize: "13px",
+                      fontWeight: "bold",
+                    }}
+                  >
+                    Hours
+                  </p>
+                  <p
+                    className="text-slate-600"
+                    style={{
+                      fontFamily: "Arial, sans-serif",
+                      fontSize: "12px",
+                    }}
+                  >
+                    Monday – Friday: 3:00 PM – 5:00 PM
+                  </p>
+                  <p
+                    className="text-slate-600"
+                    style={{
+                      fontFamily: "Arial, sans-serif",
+                      fontSize: "12px",
+                    }}
+                  >
+                    Saturday &amp; Sunday: Closed
+                  </p>
                 </div>
               </div>
             </div>
 
-            {/* Form */}
-            <div className="md:col-span-2 bg-white rounded-lg shadow-md p-6">
-              <h2 className="text-2xl font-semibold text-sky-800 mb-6">
-                Send Us a Message
+            {/* Contact Form */}
+            <div>
+              <h2
+                className="text-slate-800 mb-6"
+                style={{
+                  fontFamily: "Georgia, serif",
+                  fontSize: "14px",
+                  fontWeight: "bold",
+                }}
+              >
+                Send a Message
               </h2>
 
-              {formStatus.submitted && (
-                <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-4">
-                  <strong>Message received.</strong>
-                  <p>We will respond at the earliest.</p>
+              {submitted && (
+                <div
+                  className="border border-gray-300 bg-gray-50 px-4 py-3 mb-6"
+                  style={{
+                    fontFamily: "Arial, sans-serif",
+                    fontSize: "12px",
+                    color: "#374151",
+                  }}
+                >
+                  Your message has been received. We will respond at the
+                  earliest.
                 </div>
               )}
 
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-6">
+              <form onSubmit={handleSubmit} className="space-y-4">
+                <div>
+                  <label className="block mb-1" style={labelStyle}>
+                    Full Name
+                  </label>
                   <input
                     type="text"
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    placeholder="Full Name"
-                    className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-sky-500"
+                    style={inputStyle}
                   />
+                </div>
+
+                <div>
+                  <label className="block mb-1" style={labelStyle}>
+                    Email Address
+                  </label>
                   <input
                     type="email"
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    placeholder="Email Address"
-                    className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-sky-500"
+                    style={inputStyle}
                   />
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-6">
+                <div>
+                  <label className="block mb-1" style={labelStyle}>
+                    Phone Number
+                  </label>
                   <input
                     type="tel"
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    placeholder="Phone Number"
-                    className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-sky-500"
+                    style={inputStyle}
                   />
+                </div>
+
+                <div>
+                  <label className="block mb-1" style={labelStyle}>
+                    Subject
+                  </label>
                   <input
                     type="text"
                     name="subject"
                     value={formData.subject}
                     onChange={handleChange}
                     required
-                    placeholder="Subject"
-                    className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-sky-500"
+                    style={inputStyle}
                   />
                 </div>
 
-                <textarea
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
-                  rows={5}
-                  placeholder="Your message"
-                  className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-sky-500"
-                />
+                <div>
+                  <label className="block mb-1" style={labelStyle}>
+                    Message
+                  </label>
+                  <textarea
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
+                    required
+                    rows={5}
+                    style={{ ...inputStyle, resize: "vertical" }}
+                  />
+                </div>
 
                 <button
                   type="submit"
-                  className="inline-flex items-center px-6 py-3 text-white bg-sky-700 hover:bg-sky-800 rounded-md"
+                  className="border border-slate-700 text-slate-700 hover:bg-slate-700 hover:text-white transition-colors px-5 py-2"
+                  style={{ fontFamily: "Arial, sans-serif", fontSize: "12px" }}
                 >
-                  <Send size={18} className="mr-2" />
                   Send Message
                 </button>
               </form>
             </div>
           </div>
         </div>
-      </div>
+      </main>
+
       <FooterSection />
     </>
   );

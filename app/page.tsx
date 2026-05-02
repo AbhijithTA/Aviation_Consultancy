@@ -38,9 +38,9 @@ export default function Home() {
     <section id="aboutUs">
     <AboutUsSection />
     </section>
-    <ValuesAndVision />
+    {/* <ValuesAndVision /> */}
     <ServicesComponent />
-    <WhyChooseUs />
+    {/* <WhyChooseUs /> */}
     <FooterSection />
     </>
   );
