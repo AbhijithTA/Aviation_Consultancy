@@ -52,10 +52,11 @@ export default function ContactPage() {
       <NavbarComponent />
 
       <main className="w-full bg-white min-h-screen pt-16">
-        <div className="container mx-auto px-6 py-14 md:py-20 max-w-4xl">
+        <div className="container mx-auto px-6 py-16 md:py-24 max-w-3xl">
+
           {/* Page Heading */}
           <h1
-            className="text-slate-800 leading-snug mb-4 mt-3"
+            className="text-slate-800 leading-snug mb-4"
             style={{
               fontFamily: "Georgia, serif",
               fontSize: "16px",
@@ -67,7 +68,7 @@ export default function ContactPage() {
 
           {/* Sub-heading */}
           <h2
-            className="text-slate-700 mb-8"
+            className="text-slate-700 mb-10"
             style={{
               fontFamily: "Georgia, serif",
               fontSize: "14px",
@@ -79,13 +80,13 @@ export default function ContactPage() {
           </h2>
 
           {/* Divider */}
-          <div className="border-t border-gray-200 mb-10" />
+          <div className="border-t border-gray-200 mb-12" />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-14">
             {/* Contact Information */}
             <div>
               <h2
-                className="text-slate-800 mb-6"
+                className="text-slate-800 mb-7"
                 style={{
                   fontFamily: "Georgia, serif",
                   fontSize: "14px",
@@ -95,7 +96,7 @@ export default function ContactPage() {
                 Contact Information
               </h2>
 
-              <div className="space-y-5">
+              <div className="space-y-7">
                 {/* Name & Title */}
                 <div>
                   <p
@@ -109,7 +110,7 @@ export default function ContactPage() {
                     Adv. Sasidharan C P
                   </p>
                   <p
-                    className="text-slate-600"
+                    className="text-slate-600 mt-1"
                     style={{
                       fontFamily: "Arial, sans-serif",
                       fontSize: "12px",
@@ -118,7 +119,7 @@ export default function ContactPage() {
                     Advocate
                   </p>
                   <p
-                    className="text-slate-600"
+                    className="text-slate-600 mt-1"
                     style={{
                       fontFamily: "Arial, sans-serif",
                       fontSize: "12px",
@@ -133,7 +134,7 @@ export default function ContactPage() {
                 {/* Phone */}
                 <div>
                   <p
-                    className="text-slate-800 mb-1"
+                    className="text-slate-800 mb-2"
                     style={{
                       fontFamily: "Georgia, serif",
                       fontSize: "13px",
@@ -152,7 +153,7 @@ export default function ContactPage() {
                     +91 8800171269
                   </p>
                   <p
-                    className="text-slate-600"
+                    className="text-slate-600 mt-1"
                     style={{
                       fontFamily: "Arial, sans-serif",
                       fontSize: "12px",
@@ -165,7 +166,7 @@ export default function ContactPage() {
                 {/* Email */}
                 <div>
                   <p
-                    className="text-slate-800 mb-1"
+                    className="text-slate-800 mb-2"
                     style={{
                       fontFamily: "Georgia, serif",
                       fontSize: "13px",
@@ -188,7 +189,7 @@ export default function ContactPage() {
                 {/* Address */}
                 <div>
                   <p
-                    className="text-slate-800 mb-1"
+                    className="text-slate-800 mb-2"
                     style={{
                       fontFamily: "Georgia, serif",
                       fontSize: "13px",
@@ -217,7 +218,7 @@ export default function ContactPage() {
                 {/* Hours */}
                 <div>
                   <p
-                    className="text-slate-800 mb-1"
+                    className="text-slate-800 mb-2"
                     style={{
                       fontFamily: "Georgia, serif",
                       fontSize: "13px",
@@ -236,7 +237,7 @@ export default function ContactPage() {
                     Monday – Friday: 3:00 PM – 5:00 PM
                   </p>
                   <p
-                    className="text-slate-600"
+                    className="text-slate-600 mt-1"
                     style={{
                       fontFamily: "Arial, sans-serif",
                       fontSize: "12px",
@@ -251,7 +252,7 @@ export default function ContactPage() {
             {/* Contact Form */}
             <div>
               <h2
-                className="text-slate-800 mb-6"
+                className="text-slate-800 mb-7"
                 style={{
                   fontFamily: "Georgia, serif",
                   fontSize: "14px",
@@ -275,9 +276,9 @@ export default function ContactPage() {
                 </div>
               )}
 
-              <form onSubmit={handleSubmit} className="space-y-4">
+              <form onSubmit={handleSubmit} className="space-y-5">
                 <div>
-                  <label className="block mb-1" style={labelStyle}>
+                  <label className="block mb-1.5" style={labelStyle}>
                     Full Name
                   </label>
                   <input
@@ -289,9 +290,8 @@ export default function ContactPage() {
                     style={inputStyle}
                   />
                 </div>
-
                 <div>
-                  <label className="block mb-1" style={labelStyle}>
+                  <label className="block mb-1.5" style={labelStyle}>
                     Email Address
                   </label>
                   <input
@@ -303,9 +303,8 @@ export default function ContactPage() {
                     style={inputStyle}
                   />
                 </div>
-
                 <div>
-                  <label className="block mb-1" style={labelStyle}>
+                  <label className="block mb-1.5" style={labelStyle}>
                     Phone Number
                   </label>
                   <input
@@ -316,9 +315,8 @@ export default function ContactPage() {
                     style={inputStyle}
                   />
                 </div>
-
                 <div>
-                  <label className="block mb-1" style={labelStyle}>
+                  <label className="block mb-1.5" style={labelStyle}>
                     Subject
                   </label>
                   <input
@@ -330,9 +328,8 @@ export default function ContactPage() {
                     style={inputStyle}
                   />
                 </div>
-
                 <div>
-                  <label className="block mb-1" style={labelStyle}>
+                  <label className="block mb-1.5" style={labelStyle}>
                     Message
                   </label>
                   <textarea
@@ -344,14 +341,18 @@ export default function ContactPage() {
                     style={{ ...inputStyle, resize: "vertical" }}
                   />
                 </div>
-
-                <button
-                  type="submit"
-                  className="border border-slate-700 text-slate-700 hover:bg-slate-700 hover:text-white transition-colors px-5 py-2"
-                  style={{ fontFamily: "Arial, sans-serif", fontSize: "12px" }}
-                >
-                  Send Message
-                </button>
+                <div className="pt-2">
+                  <button
+                    type="submit"
+                    className="border border-slate-700 text-slate-700 hover:bg-slate-700 hover:text-white transition-colors px-5 py-2"
+                    style={{
+                      fontFamily: "Arial, sans-serif",
+                      fontSize: "12px",
+                    }}
+                  >
+                    Send Message
+                  </button>
+                </div>
               </form>
             </div>
           </div>

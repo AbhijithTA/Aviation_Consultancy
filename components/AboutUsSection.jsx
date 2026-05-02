@@ -1,10 +1,18 @@
 export default function AboutUsSection() {
   return (
-    <section className="w-full bg-white border-b border-gray-200">
-      <div className="container mx-auto px-6 py-14 md:py-20 max-w-4xl">
+    <section className="w-full bg-white border-b border-gray-200 pt-16">
+      <div className="container mx-auto px-6 py-16 md:py-24 max-w-3xl">
+        {/* Page Label */}
+        <p
+          className="uppercase tracking-widest text-gray-400 mb-6"
+          style={{ fontFamily: "Arial, sans-serif", fontSize: "11px" }}
+        >
+          About
+        </p>
+
         {/* Section Heading */}
         <h1
-          className="text-slate-800 leading-snug mb-8"
+          className="text-slate-800 leading-snug mb-10"
           style={{
             fontFamily: "Georgia, serif",
             fontSize: "16px",
@@ -15,11 +23,11 @@ export default function AboutUsSection() {
         </h1>
 
         {/* Divider */}
-        <div className="border-t border-gray-200 mb-8" />
+        <div className="border-t border-gray-200 mb-10" />
 
         {/* Paragraph 1 */}
         <p
-          className="text-slate-700 leading-relaxed mb-6"
+          className="text-slate-700 leading-relaxed mb-8"
           style={{ fontFamily: "Arial, sans-serif", fontSize: "12px" }}
         >
           The practice focuses on aviation regulatory compliance, security
@@ -30,7 +38,7 @@ export default function AboutUsSection() {
 
         {/* Paragraph 2 */}
         <p
-          className="text-slate-700 leading-relaxed mb-6"
+          className="text-slate-700 leading-relaxed mb-10"
           style={{ fontFamily: "Arial, sans-serif", fontSize: "12px" }}
         >
           Organisations operating in regulated environments often encounter
@@ -44,7 +52,7 @@ export default function AboutUsSection() {
 
         {/* Sub-heading */}
         <h2
-          className="text-slate-800 mb-4"
+          className="text-slate-800 mb-5"
           style={{
             fontFamily: "Georgia, serif",
             fontSize: "14px",
@@ -56,7 +64,7 @@ export default function AboutUsSection() {
 
         {/* Bullet list */}
         <ul
-          className="text-slate-700 leading-relaxed mb-8 space-y-3"
+          className="text-slate-700 leading-relaxed mb-10 space-y-3"
           style={{
             fontFamily: "Arial, sans-serif",
             fontSize: "12px",
@@ -103,7 +111,7 @@ export default function AboutUsSection() {
 
         {/* Paragraph 3 */}
         <p
-          className="text-slate-700 leading-relaxed mb-6"
+          className="text-slate-700 leading-relaxed mb-8"
           style={{ fontFamily: "Arial, sans-serif", fontSize: "12px" }}
         >
           These observations are based on exposure to regulatory and

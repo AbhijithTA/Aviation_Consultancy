@@ -50,10 +50,18 @@ export default function ServicesPage() {
       <NavbarComponent />
 
       <main className="w-full bg-white min-h-screen pt-16">
-        <div className="container mx-auto px-6 py-14 md:py-20 max-w-4xl">
+        <div className="container mx-auto px-6 py-16 md:py-24 max-w-3xl">
+          {/* Page Label */}
+          <p
+            className="uppercase tracking-widest text-gray-400 mb-6"
+            style={{ fontFamily: "Arial, sans-serif", fontSize: "11px" }}
+          >
+            Services
+          </p>
+
           {/* Page Heading */}
           <h1
-            className="text-slate-800 leading-snug mb-8 mt-3"
+            className="text-slate-800 leading-snug mb-10"
             style={{
               fontFamily: "Georgia, serif",
               fontSize: "16px",
@@ -64,7 +72,7 @@ export default function ServicesPage() {
           </h1>
 
           {/* Divider */}
-          <div className="border-t border-gray-200 mb-8" />
+          <div className="border-t border-gray-200 mb-10" />
 
           {/* Intro */}
           <p
@@ -75,11 +83,11 @@ export default function ServicesPage() {
           </p>
 
           {/* Lettered sections */}
-          <div className="space-y-10">
+          <div className="space-y-12">
             {sections.map((section) => (
               <div key={section.label}>
                 <h2
-                  className="text-slate-800 mb-3"
+                  className="text-slate-800 mb-4"
                   style={{
                     fontFamily: "Georgia, serif",
                     fontSize: "14px",
@@ -89,7 +97,7 @@ export default function ServicesPage() {
                   {section.label}
                 </h2>
                 <ul
-                  className="text-slate-700 leading-relaxed space-y-2"
+                  className="text-slate-700 leading-relaxed space-y-3"
                   style={{
                     fontFamily: "Arial, sans-serif",
                     fontSize: "12px",
@@ -106,7 +114,7 @@ export default function ServicesPage() {
           </div>
 
           {/* Divider */}
-          <div className="border-t border-gray-200 mt-14 mb-8" />
+          <div className="border-t border-gray-200 mt-16 mb-10" />
 
           {/* Contact reference */}
           <p
