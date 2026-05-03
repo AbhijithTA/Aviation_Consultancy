@@ -50,7 +50,8 @@ export default function ServicesSection() {
 
   return (
     <section className="w-full bg-white border-b border-gray-200">
-      <div className="container mx-auto px-6 py-16 md:py-24 max-w-3xl">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-24">
+
         {/* Page Label */}
         <p
           className="uppercase tracking-widest text-gray-400 mb-6"
@@ -61,38 +62,30 @@ export default function ServicesSection() {
 
         {/* Section Heading */}
         <h1
-          className="text-slate-800 leading-snug mb-10"
-          style={{
-            fontFamily: "Georgia, serif",
-            fontSize: "16px",
-            fontWeight: "bold",
-          }}
+          className="text-slate-800 leading-snug mb-8 sm:mb-10"
+          style={{ fontFamily: "Georgia, serif", fontSize: "clamp(14px, 2.5vw, 20px)", fontWeight: "bold" }}
         >
           Areas of Professional Engagement
         </h1>
 
         {/* Divider */}
-        <div className="border-t border-gray-200 mb-10" />
+        <div className="border-t border-gray-200 mb-8 sm:mb-10" />
 
         {/* Intro line */}
         <p
-          className="text-slate-700 leading-relaxed mb-10"
-          style={{ fontFamily: "Arial, sans-serif", fontSize: "12px" }}
+          className="text-slate-700 leading-relaxed mb-8 sm:mb-10"
+          style={{ fontFamily: "Arial, sans-serif", fontSize: "clamp(12px, 1.8vw, 15px)", lineHeight: "1.8" }}
         >
           The work undertaken may include:
         </p>
 
         {/* Lettered sections */}
-        <div className="space-y-12">
+        <div className="space-y-10 sm:space-y-12">
           {sections.map((section) => (
             <div key={section.label}>
               <h2
-                className="text-slate-800 mb-4"
-                style={{
-                  fontFamily: "Georgia, serif",
-                  fontSize: "14px",
-                  fontWeight: "bold",
-                }}
+                className="text-slate-800 mb-3 sm:mb-4"
+                style={{ fontFamily: "Georgia, serif", fontSize: "clamp(12px, 2vw, 15px)", fontWeight: "bold" }}
               >
                 {section.label}
               </h2>
@@ -100,7 +93,8 @@ export default function ServicesSection() {
                 className="text-slate-700 leading-relaxed space-y-3"
                 style={{
                   fontFamily: "Arial, sans-serif",
-                  fontSize: "12px",
+                  fontSize: "clamp(12px, 1.8vw, 15px)",
+                  lineHeight: "1.8",
                   paddingLeft: "1.25rem",
                   listStyleType: "disc",
                 }}
@@ -112,6 +106,7 @@ export default function ServicesSection() {
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );

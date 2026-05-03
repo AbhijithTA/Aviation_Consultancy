@@ -53,13 +53,12 @@ export default function ContactPage() {
 
       <main className="w-full bg-white min-h-screen pt-16">
         <div className="container mx-auto px-6 py-16 md:py-24 max-w-3xl">
-
           {/* Page Heading */}
           <h1
             className="text-slate-800 leading-snug mb-4"
             style={{
               fontFamily: "Georgia, serif",
-              fontSize: "16px",
+              fontSize: "20px",
               fontWeight: "bold",
             }}
           >
@@ -89,7 +88,7 @@ export default function ContactPage() {
                 className="text-slate-800 mb-7"
                 style={{
                   fontFamily: "Georgia, serif",
-                  fontSize: "14px",
+                  fontSize: "16px",
                   fontWeight: "bold",
                 }}
               >
@@ -103,7 +102,7 @@ export default function ContactPage() {
                     className="text-slate-800"
                     style={{
                       fontFamily: "Arial, sans-serif",
-                      fontSize: "12px",
+                      fontSize: "15px",
                       fontWeight: "bold",
                     }}
                   >
@@ -113,7 +112,7 @@ export default function ContactPage() {
                     className="text-slate-600 mt-1"
                     style={{
                       fontFamily: "Arial, sans-serif",
-                      fontSize: "12px",
+                      fontSize: "15px",
                     }}
                   >
                     Advocate
@@ -122,7 +121,7 @@ export default function ContactPage() {
                     className="text-slate-600 mt-1"
                     style={{
                       fontFamily: "Arial, sans-serif",
-                      fontSize: "12px",
+                      fontSize: "15px",
                     }}
                   >
                     Aviation Regulatory &amp; Compliance Advisory
@@ -147,7 +146,7 @@ export default function ContactPage() {
                     className="text-slate-600"
                     style={{
                       fontFamily: "Arial, sans-serif",
-                      fontSize: "12px",
+                      fontSize: "15px",
                     }}
                   >
                     +91 8800171269
@@ -156,7 +155,7 @@ export default function ContactPage() {
                     className="text-slate-600 mt-1"
                     style={{
                       fontFamily: "Arial, sans-serif",
-                      fontSize: "12px",
+                      fontSize: "15px",
                     }}
                   >
                     +91 8156828115
@@ -179,7 +178,7 @@ export default function ContactPage() {
                     className="text-slate-600"
                     style={{
                       fontFamily: "Arial, sans-serif",
-                      fontSize: "12px",
+                      fontSize: "15px",
                     }}
                   >
                     sasidharann277@gmail.com
@@ -202,7 +201,7 @@ export default function ContactPage() {
                     className="text-slate-600 leading-relaxed"
                     style={{
                       fontFamily: "Arial, sans-serif",
-                      fontSize: "12px",
+                      fontSize: "15px",
                     }}
                   >
                     Puthen Puthusseri Building, Door No. 11/631
@@ -231,7 +230,7 @@ export default function ContactPage() {
                     className="text-slate-600"
                     style={{
                       fontFamily: "Arial, sans-serif",
-                      fontSize: "12px",
+                      fontSize: "15px",
                     }}
                   >
                     Monday – Friday: 3:00 PM – 5:00 PM
@@ -240,7 +239,7 @@ export default function ContactPage() {
                     className="text-slate-600 mt-1"
                     style={{
                       fontFamily: "Arial, sans-serif",
-                      fontSize: "12px",
+                      fontSize: "15px",
                     }}
                   >
                     Saturday &amp; Sunday: Closed
@@ -267,7 +266,7 @@ export default function ContactPage() {
                   className="border border-gray-300 bg-gray-50 px-4 py-3 mb-6"
                   style={{
                     fontFamily: "Arial, sans-serif",
-                    fontSize: "12px",
+                    fontSize: "15px",
                     color: "#374151",
                   }}
                 >

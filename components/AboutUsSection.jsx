@@ -1,7 +1,7 @@
 export default function AboutUsSection() {
   return (
-    <section className="w-full bg-white border-b border-gray-200 pt-16">
-      <div className="container mx-auto px-6 py-16 md:py-24 max-w-3xl">
+    <section className="w-full bg-white border-b border-gray-200 pt-2">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-24">
         {/* Page Label */}
         <p
           className="uppercase tracking-widest text-gray-400 mb-6"
@@ -12,10 +12,10 @@ export default function AboutUsSection() {
 
         {/* Section Heading */}
         <h1
-          className="text-slate-800 leading-snug mb-10"
+          className="text-slate-800 leading-snug mb-8 sm:mb-10"
           style={{
             fontFamily: "Georgia, serif",
-            fontSize: "16px",
+            fontSize: "clamp(14px, 2.5vw, 20px)",
             fontWeight: "bold",
           }}
         >
@@ -23,12 +23,16 @@ export default function AboutUsSection() {
         </h1>
 
         {/* Divider */}
-        <div className="border-t border-gray-200 mb-10" />
+        <div className="border-t border-gray-200 mb-8 sm:mb-10" />
 
         {/* Paragraph 1 */}
         <p
-          className="text-slate-700 leading-relaxed mb-8"
-          style={{ fontFamily: "Arial, sans-serif", fontSize: "12px" }}
+          className="text-slate-700 leading-relaxed mb-7 sm:mb-8"
+          style={{
+            fontFamily: "Arial, sans-serif",
+            fontSize: "clamp(12px, 1.8vw, 15px)",
+            lineHeight: "1.8",
+          }}
         >
           The practice focuses on aviation regulatory compliance, security
           frameworks, and administrative law, drawing from experience in
@@ -38,8 +42,12 @@ export default function AboutUsSection() {
 
         {/* Paragraph 2 */}
         <p
-          className="text-slate-700 leading-relaxed mb-10"
-          style={{ fontFamily: "Arial, sans-serif", fontSize: "12px" }}
+          className="text-slate-700 leading-relaxed mb-8 sm:mb-10"
+          style={{
+            fontFamily: "Arial, sans-serif",
+            fontSize: "clamp(12px, 1.8vw, 15px)",
+            lineHeight: "1.8",
+          }}
         >
           Organisations operating in regulated environments often encounter
           practical challenges in areas such as interpretation of regulatory
@@ -52,10 +60,10 @@ export default function AboutUsSection() {
 
         {/* Sub-heading */}
         <h2
-          className="text-slate-800 mb-5"
+          className="text-slate-800 mb-4 sm:mb-5"
           style={{
             fontFamily: "Georgia, serif",
-            fontSize: "14px",
+            fontSize: "clamp(12px, 2vw, 17px)",
             fontWeight: "bold",
           }}
         >
@@ -64,10 +72,11 @@ export default function AboutUsSection() {
 
         {/* Bullet list */}
         <ul
-          className="text-slate-700 leading-relaxed mb-10 space-y-3"
+          className="text-slate-700 leading-relaxed mb-8 sm:mb-10 space-y-3"
           style={{
             fontFamily: "Arial, sans-serif",
-            fontSize: "12px",
+            fontSize: "clamp(12px, 1.8vw, 15px)",
+            lineHeight: "1.8",
             paddingLeft: "1.25rem",
             listStyleType: "disc",
           }}
@@ -111,8 +120,12 @@ export default function AboutUsSection() {
 
         {/* Paragraph 3 */}
         <p
-          className="text-slate-700 leading-relaxed mb-8"
-          style={{ fontFamily: "Arial, sans-serif", fontSize: "12px" }}
+          className="text-slate-700 leading-relaxed mb-7 sm:mb-8"
+          style={{
+            fontFamily: "Arial, sans-serif",
+            fontSize: "clamp(12px, 1.8vw, 15px)",
+            lineHeight: "1.8",
+          }}
         >
           These observations are based on exposure to regulatory and
           administrative processes. The approach to addressing such matters
@@ -123,7 +136,11 @@ export default function AboutUsSection() {
         {/* Paragraph 4 */}
         <p
           className="text-slate-700 leading-relaxed"
-          style={{ fontFamily: "Arial, sans-serif", fontSize: "12px" }}
+          style={{
+            fontFamily: "Arial, sans-serif",
+            fontSize: "clamp(12px, 1.8vw, 15px)",
+            lineHeight: "1.8",
+          }}
         >
           The scope of work may extend to related legal areas, including
           applicable aviation statutes, regulatory guidelines, and contractual

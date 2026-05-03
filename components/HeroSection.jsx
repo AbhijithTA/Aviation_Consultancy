@@ -3,14 +3,14 @@ import Link from "next/link";
 export default function AviationComplianceHero() {
   return (
     <section className="w-full bg-white pt-16">
-      <div className="container mx-auto px-6 py-16 md:py-24 max-w-3xl">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-24">
         {/* Name & Designation — center aligned */}
-        <div className="text-center mb-10">
+        <div className="text-center mb-10 sm:mb-12">
           <h1
             className="text-slate-800 mb-2"
             style={{
               fontFamily: "Georgia, serif",
-              fontSize: "16px",
+              fontSize: "clamp(14px, 2.5vw, 16px)",
               fontWeight: "bold",
             }}
           >
@@ -18,13 +18,19 @@ export default function AviationComplianceHero() {
           </h1>
           <p
             className="text-slate-600 mb-1"
-            style={{ fontFamily: "Arial, sans-serif", fontSize: "12px" }}
+            style={{
+              fontFamily: "Arial, sans-serif",
+              fontSize: "clamp(11px, 1.8vw, 12px)",
+            }}
           >
             MSW, LL.B (Hons), PGDALATM (NALSAR)
           </p>
           <p
-            className="text-slate-600"
-            style={{ fontFamily: "Georgia, serif", fontSize: "14px" }}
+            className="text-slate-600 mt-2"
+            style={{
+              fontFamily: "Georgia, serif",
+              fontSize: "clamp(12px, 2vw, 14px)",
+            }}
           >
             Aviation Regulatory &amp; Compliance Advisory
           </p>
@@ -32,7 +38,7 @@ export default function AviationComplianceHero() {
             className="text-slate-500 mt-1"
             style={{
               fontFamily: "Georgia, serif",
-              fontSize: "13px",
+              fontSize: "clamp(11px, 1.8vw, 13px)",
               fontWeight: "normal",
             }}
           >
@@ -41,12 +47,16 @@ export default function AviationComplianceHero() {
         </div>
 
         {/* Divider */}
-        <div className="border-t border-gray-200 mb-10" />
+        <div className="border-t border-gray-200 mb-8 sm:mb-10" />
 
-        {/* Body paragraph — left aligned */}
+        {/* Body paragraph */}
         <p
-          className="text-slate-700 leading-relaxed mb-10"
-          style={{ fontFamily: "Arial, sans-serif", fontSize: "12px" }}
+          className="text-slate-700 leading-relaxed mb-8 sm:mb-10"
+          style={{
+            fontFamily: "Arial, sans-serif",
+            fontSize: "clamp(12px, 1.8vw, 13px)",
+            lineHeight: "1.8",
+          }}
         >
           Independent advisory in aviation regulatory and compliance matters,
           grounded in legal practice, regulatory experience, and domain-specific
@@ -58,7 +68,7 @@ export default function AviationComplianceHero() {
           className="text-slate-800 mb-4"
           style={{
             fontFamily: "Georgia, serif",
-            fontSize: "14px",
+            fontSize: "clamp(12px, 2vw, 14px)",
             fontWeight: "bold",
           }}
         >
@@ -67,8 +77,12 @@ export default function AviationComplianceHero() {
 
         {/* Introduction body */}
         <p
-          className="text-slate-700 leading-relaxed mb-12"
-          style={{ fontFamily: "Arial, sans-serif", fontSize: "12px" }}
+          className="text-slate-700 leading-relaxed mb-10 sm:mb-12"
+          style={{
+            fontFamily: "Arial, sans-serif",
+            fontSize: "clamp(12px, 1.8vw, 13px)",
+            lineHeight: "1.8",
+          }}
         >
           This platform presents the professional profile of Sasidharan C P,
           Advocate, in the field of aviation regulatory compliance and related

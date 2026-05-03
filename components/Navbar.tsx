@@ -16,24 +16,24 @@ export default function NavbarComponent() {
 
   return (
     <nav className="bg-white border-b border-gray-200 fixed w-full z-50">
-      <div className="max-w-4xl mx-auto px-6 py-3 flex items-center justify-between">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
         {/* Logo + Name */}
-        <Link href="/" className="flex items-center gap-3">
+        <Link href="/" className="flex items-center gap-2 sm:gap-3 min-w-0">
           <Image
             src="/Logo/Logo2.png"
             alt="Logo"
-            width={44}
-            height={44}
-            className="rounded"
+            width={38}
+            height={38}
+            className="rounded flex-shrink-0"
           />
-          <div>
+          <div className="min-w-0">
             <span
-              className="block text-slate-800"
+              className="block text-slate-800 truncate"
               style={{
                 fontFamily: "Georgia, serif",
-                fontSize: "13px",
+                fontSize: "clamp(11px, 2vw, 13px)",
                 fontWeight: "bold",
-                lineHeight: "1.3",
+                lineHeight: "1.4",
               }}
             >
               Aviation Regulatory &amp; Compliance Advisory
@@ -42,22 +42,22 @@ export default function NavbarComponent() {
               className="block text-slate-500"
               style={{
                 fontFamily: "Arial, sans-serif",
-                fontSize: "11px",
-                lineHeight: "1.3",
+                fontSize: "clamp(10px, 1.5vw, 11px)",
+                lineHeight: "1.4",
               }}
             >
-              Sasidharan C P Advocate
+              Sasidharan C P, Advocate
             </span>
           </div>
         </Link>
 
         {/* Desktop Nav */}
-        <ul className="hidden md:flex items-center gap-8">
+        <ul className="hidden md:flex items-center gap-6 lg:gap-8 flex-shrink-0 ml-6">
           {navLinks.map((link) => (
             <li key={link.href}>
               <Link
                 href={link.href}
-                className="text-slate-600 hover:text-slate-900 transition-colors"
+                className="text-slate-600 hover:text-slate-900 transition-colors whitespace-nowrap"
                 style={{ fontFamily: "Arial, sans-serif", fontSize: "12px" }}
               >
                 {link.label}
@@ -66,10 +66,10 @@ export default function NavbarComponent() {
           ))}
         </ul>
 
-        {/* Mobile Toggle — text only, no icon */}
+        {/* Mobile Toggle */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden text-slate-600 hover:text-slate-900 transition-colors"
+          className="md:hidden text-slate-600 hover:text-slate-900 transition-colors flex-shrink-0 ml-4"
           style={{ fontFamily: "Arial, sans-serif", fontSize: "12px" }}
           aria-label="Toggle menu"
         >
@@ -79,7 +79,7 @@ export default function NavbarComponent() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <ul className="md:hidden bg-white border-t border-gray-200 px-6 py-4 space-y-4">
+        <ul className="md:hidden bg-white border-t border-gray-200 px-4 sm:px-6 py-4 space-y-4">
           {navLinks.map((link) => (
             <li key={link.href}>
               <Link
