@@ -46,7 +46,7 @@ export default function NavbarComponent() {
                 lineHeight: "1.3",
               }}
             >
-              Adv. Sasidharan C P
+              Sasidharan C P Advocate
             </span>
           </div>
         </Link>

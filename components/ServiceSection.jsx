@@ -39,11 +39,18 @@ export default function ServicesSection() {
         "Strengthening compliance systems and documentation practices",
       ],
     },
+    {
+      label: "F. International Law Assistance",
+      items: [
+        "Comprehensive cross-border legal advisory services",
+        "International aviation law support, ICAO regulatory compliance, and coordination",
+      ],
+    },
   ];
 
   return (
     <section className="w-full bg-white border-b border-gray-200">
-      <div className="container mx-auto px-6 py-14 md:py-20 max-w-4xl">
+      <div className="container mx-auto px-6 py-16 md:py-24 max-w-3xl">
         {/* Page Label */}
         <p
           className="uppercase tracking-widest text-gray-400 mb-6"
@@ -54,7 +61,7 @@ export default function ServicesSection() {
 
         {/* Section Heading */}
         <h1
-          className="text-slate-800 leading-snug mb-8"
+          className="text-slate-800 leading-snug mb-10"
           style={{
             fontFamily: "Georgia, serif",
             fontSize: "16px",
@@ -65,7 +72,7 @@ export default function ServicesSection() {
         </h1>
 
         {/* Divider */}
-        <div className="border-t border-gray-200 mb-8" />
+        <div className="border-t border-gray-200 mb-10" />
 
         {/* Intro line */}
         <p
@@ -76,12 +83,11 @@ export default function ServicesSection() {
         </p>
 
         {/* Lettered sections */}
-        <div className="space-y-8">
+        <div className="space-y-12">
           {sections.map((section) => (
             <div key={section.label}>
-              {/* Sub-heading */}
               <h2
-                className="text-slate-800 mb-3"
+                className="text-slate-800 mb-4"
                 style={{
                   fontFamily: "Georgia, serif",
                   fontSize: "14px",
@@ -90,10 +96,8 @@ export default function ServicesSection() {
               >
                 {section.label}
               </h2>
-
-              {/* Bullet list */}
               <ul
-                className="text-slate-700 leading-relaxed space-y-2"
+                className="text-slate-700 leading-relaxed space-y-3"
                 style={{
                   fontFamily: "Arial, sans-serif",
                   fontSize: "12px",

@@ -43,6 +43,13 @@ export default function ServicesPage() {
         "Strengthening compliance systems and documentation practices",
       ],
     },
+    {
+      label: "F. International Law Assistance",
+      items: [
+        "Comprehensive cross-border legal advisory services",
+        "International aviation law support, ICAO regulatory compliance, and coordination",
+      ],
+    },
   ];
 
   return (
@@ -51,6 +58,7 @@ export default function ServicesPage() {
 
       <main className="w-full bg-white min-h-screen pt-16">
         <div className="container mx-auto px-6 py-16 md:py-24 max-w-3xl">
+
           {/* Page Label */}
           <p
             className="uppercase tracking-widest text-gray-400 mb-6"
@@ -62,11 +70,7 @@ export default function ServicesPage() {
           {/* Page Heading */}
           <h1
             className="text-slate-800 leading-snug mb-10"
-            style={{
-              fontFamily: "Georgia, serif",
-              fontSize: "16px",
-              fontWeight: "bold",
-            }}
+            style={{ fontFamily: "Georgia, serif", fontSize: "16px", fontWeight: "bold" }}
           >
             Areas of Professional Engagement
           </h1>
@@ -88,11 +92,7 @@ export default function ServicesPage() {
               <div key={section.label}>
                 <h2
                   className="text-slate-800 mb-4"
-                  style={{
-                    fontFamily: "Georgia, serif",
-                    fontSize: "14px",
-                    fontWeight: "bold",
-                  }}
+                  style={{ fontFamily: "Georgia, serif", fontSize: "14px", fontWeight: "bold" }}
                 >
                   {section.label}
                 </h2>
@@ -132,6 +132,7 @@ export default function ServicesPage() {
           >
             Contact
           </Link>
+
         </div>
       </main>
 
