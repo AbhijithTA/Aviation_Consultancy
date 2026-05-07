@@ -108,15 +108,7 @@ export default function ContactPage() {
                   >
                     Adv. Sasidharan C P
                   </p>
-                  <p
-                    className="text-slate-600 mt-1"
-                    style={{
-                      fontFamily: "Arial, sans-serif",
-                      fontSize: "15px",
-                    }}
-                  >
-                    Advocate
-                  </p>
+
                   <p
                     className="text-slate-600 mt-1"
                     style={{
@@ -182,6 +174,15 @@ export default function ContactPage() {
                     }}
                   >
                     sasidharann277@gmail.com
+                  </p>
+                  <p
+                    className="text-slate-600"
+                    style={{
+                      fontFamily: "Arial, sans-serif",
+                      fontSize: "15px",
+                    }}
+                  >
+                    info@aviateconsultancy.in
                   </p>
                 </div>
 
