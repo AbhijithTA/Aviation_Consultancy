@@ -182,7 +182,7 @@ export default function ContactPage() {
                       fontSize: "15px",
                     }}
                   >
-                    info@aviateconsultancy.in
+                    info@aviateconsultancy.com
                   </p>
                 </div>
 
